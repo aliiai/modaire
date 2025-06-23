@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}مشروعي{% endblock %}</title>
+    <!-- دعم Vite dev/build تلقائيًا -->
+    <script type="module">
+      (async () => {
+        // نحاول تحميل Vite client (dev)
+        try {
+          await import('http://localhost:5173/@vite/client');
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = 'http://localhost:5173/resources/css/app.css';
+          document.head.appendChild(link);
+        } catch (e) {
+          // إذا فشل (يعني ليس dev)، نستخدم الملف المجمّع
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = '/build/assets/app-C35xxJJ3.css';
+          document.head.appendChild(link);
+        }
+      })();
+    </script>
+</head>
+<body class="bg-gray-50">
+    {% include 'layout/header.twig' %}
+
+    <main class="container mx-auto p-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'layout/footer.twig' %}
+</body>
+</html>
