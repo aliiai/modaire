@@ -261,8 +261,7 @@ background: linear-gradient(83.78deg, #242425 0%, #2E3236 50.31%, #252525 100%);
 }
 .slider-client {
   transition: margin-top 1s ease;
-      overflow-x: clip !important;
-    overflow-y: visible !important;
+    
 
 }
 
