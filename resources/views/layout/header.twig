@@ -1,5 +1,5 @@
 <header >
-     <nav class="navbar">
+     <nav class="navbar p-9">
       <div class="navbar-container container">
         <input type="checkbox" name="" id="" />
         <div class="hamburger-lines">
@@ -7,7 +7,21 @@
           <span class="line line2"></span>
           <span class="line line3"></span>
         </div>
-        <div>
+      
+
+<img 
+  src="{{ asset('images/logo.png') }}" 
+  class="w-[200px] object-contain md:-translate-y-[70px] h-[200px]" 
+  alt="Hero Section Image" 
+/>
+        <ul class="menu-items flex ">
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">الملابس</a></li>
+          <li><a href="#">العطور</a></li>
+          <li><a href="#">النظارات</a></li>
+          <li><a href="#">الاحذية</a></li>
+        </ul>
+  <div>
           <ui class="list-none flex gap-[20px] p-[20px]">
             <li>
               <svg
@@ -60,20 +74,7 @@
               </svg>
             </li>
           </ui>
-        </div>
-        <ul class="menu-items flex">
-          <li><a href="#">الرئيسية</a></li>
-          <li><a href="#">الملابس</a></li>
-          <li><a href="#">العطور</a></li>
-          <li><a href="#">النظارات</a></li>
-          <li><a href="#">الاحذية</a></li>
-        </ul>
-
-<img 
-  src="{{ asset('images/logo.png') }}" 
-  class="w-[144px] h-[200px]" 
-  alt="Hero Section Image" 
-/>
+        </div
       </div>
     </nav>
 </header> 

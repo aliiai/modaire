@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 64px;
+  
   align-items: center;
 }
 
@@ -126,7 +127,8 @@ body {
 
   .navbar .menu-items {
     padding-top: 100px;
-    background: #fff;
+    padding-right: 50px;
+    background: #161414;
     height: 100vh;
     max-width: 300px;
     transform: translate(-250%);
@@ -155,6 +157,8 @@ body {
 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
+       transform: translateY(-146px); 
+
   }
 
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -268,5 +272,43 @@ background: linear-gradient(83.78deg, #242425 0%, #2E3236 50.31%, #252525 100%);
 .footer{
   box-shadow: 0px 15px 20px 0px #00000040 inset;
 background: linear-gradient(83.78deg, #242425 0%, #2E3236 50.31%, #252525 100%);
+
+}
+/* in your global stylesheet */
+swiper-container::part(container) {
+  overflow: visible !important;
+}
+@media (max-width: 768px) {
+
+  .menu-items{
+   transform: translateY(-146px); 
+  }
+}
+
+.big-card{
+  backdrop-filter: blur(8.399999618530273px);
+  border: 1px solid #DEDEDE3D;
+
+}
+.sidebar{
+  border: 1px solid #FFFFFF4D;
+  background: #FFFFFF14;
+backdrop-filter: blur(15.600000381469727px);
+
+}
+/* hide default triangle in some browsers */
+details summary::-webkit-details-marker {
+  display: none;
+    transition: 0.5s all;
+
+}
+
+/* rotate our SVG when open */
+details[open] summary .arrow {
+  transform: rotate(180deg);
+  transition: 0.5s all;
+}
+.card-single{
+  box-shadow: 0px 4px 30px 0px #FFFFFF40;
 
 }
