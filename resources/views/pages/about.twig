@@ -4,11 +4,19 @@
 {% endblock %}
 
 {% block content %}
-	<div
-		class="big-card grid grid-cols-8 h-full mx-[80px] mt-[150px]">
+	<div class="big-card grid grid-cols-8 h-full mx-[80px] md:mx-[30px] mt-[150px]">
+		<button
+			id="mobile-toggle" class="col-span-1 hidden relative z-[51]  items-start" class="md:hidden p-4">
+			<!-- أيقونة الهامبرغر -->
+			<svg class color="white" width="47" height="47" viewbox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="23.5" cy="23.5" r="23.5" fill="#232120"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M19.821 13.7917C20.1477 13.1033 20.8512 12.625 21.6667 12.625H26.3333C27.1477 12.625 27.8512 13.1033 28.179 13.7917C28.9758 13.7987 29.5977 13.8348 30.153 14.0518C30.8159 14.3112 31.3925 14.7518 31.8167 15.3235C32.2448 15.8987 32.4455 16.6383 32.722 17.6545L32.7652 17.8132L33.4535 20.3413C33.9125 20.5729 34.3148 20.9027 34.6318 21.3073C35.3575 22.2372 35.4858 23.3443 35.3575 24.6137C35.2315 25.8457 34.8442 27.3973 34.3588 29.3398L34.3273 29.4623C34.0205 30.6908 33.7708 31.6883 33.4757 32.4665C33.1653 33.2785 32.7733 33.9435 32.1258 34.4487C31.4795 34.9538 30.7387 35.172 29.8765 35.277C29.0493 35.375 28.0215 35.375 26.7557 35.375H21.2443C19.9785 35.375 18.9495 35.375 18.1235 35.2758C17.2602 35.1732 16.5205 34.9538 15.873 34.4475C15.2267 33.9435 14.8347 33.2785 14.5243 32.4665C14.228 31.6883 13.9795 30.6908 13.6727 29.4623L13.6412 29.3398C13.1558 27.3973 12.7673 25.8457 12.6425 24.6148C12.5142 23.3432 12.6425 22.2372 13.367 21.3073C13.6972 20.885 14.0927 20.5723 14.5453 20.3413L15.2337 17.8132L15.278 17.6545C15.5545 16.6383 15.7552 15.8987 16.1833 15.3223C16.6077 14.7511 17.1842 14.3108 17.847 14.0518C18.4023 13.8348 19.023 13.7975 19.821 13.7917ZM19.8222 15.5452C19.0498 15.5533 18.7407 15.5825 18.484 15.6828C18.127 15.8225 17.8164 16.0598 17.588 16.3677C17.3827 16.6442 17.2613 17.0303 16.923 18.2752L16.51 19.7872C17.721 19.625 19.2843 19.625 21.2257 19.625H26.7732C28.7157 19.625 30.279 19.625 31.4888 19.7872L31.077 18.274C30.7375 17.0292 30.6173 16.643 30.412 16.3665C30.1836 16.0586 29.873 15.8213 29.516 15.6817C29.2593 15.5813 28.949 15.5522 28.1767 15.544C28.0108 15.8924 27.7497 16.1867 27.4234 16.3928C27.0972 16.5989 26.7192 16.7083 26.3333 16.7083H21.6667C21.2808 16.7083 20.9028 16.5989 20.5766 16.3928C20.2503 16.1867 19.9892 15.8924 19.8233 15.544M21.6667 14.375C21.5893 14.375 21.5151 14.4057 21.4604 14.4604C21.4057 14.5151 21.375 14.5893 21.375 14.6667C21.375 14.744 21.4057 14.8182 21.4604 14.8729C21.5151 14.9276 21.5893 14.9583 21.6667 14.9583H26.3333C26.4107 14.9583 26.4849 14.9276 26.5396 14.8729C26.5943 14.8182 26.625 14.744 26.625 14.6667C26.625 14.5893 26.5943 14.5151 26.5396 14.4604C26.4849 14.4057 26.4107 14.375 26.3333 14.375H21.6667ZM16.65 21.5337C15.5883 21.6877 15.0738 21.9677 14.7483 22.3853C14.4217 22.8018 14.2758 23.3677 14.3843 24.4363C14.4952 25.5283 14.851 26.9563 15.3573 28.9863C15.6817 30.279 15.9057 31.175 16.1623 31.8447C16.4073 32.491 16.6488 32.8328 16.9522 33.0697C17.2543 33.3053 17.644 33.4558 18.3323 33.5387C19.044 33.6238 19.9657 33.625 21.3003 33.625H26.702C28.0355 33.625 28.9595 33.6238 29.67 33.5387C30.3583 33.457 30.748 33.3053 31.0502 33.0697C31.3535 32.8328 31.5938 32.491 31.8412 31.8447C32.0955 31.175 32.3207 30.279 32.6438 28.9863C33.1513 26.9563 33.5072 25.5283 33.6168 24.4363C33.7265 23.3677 33.5795 22.8007 33.254 22.3842C32.9285 21.9677 32.414 21.6877 31.3512 21.5337C30.2662 21.3773 28.7938 21.375 26.702 21.375H21.3003C19.2085 21.375 17.7362 21.3773 16.6512 21.5337" fill="white"/>
+			</svg>
+		</button>
 		{# sidebar #}
-		<div class="col-span-2 sidebar w-full h-full">
-			<p class="text-[30px] font-[700] text-[white] text-center p-9">التصنيفات</p>
+		<div class="col-span-2  sidebar w-full h-full" id="sidebar">
+
+			<p class="text-[30px] md:text-[25px]  font-[700] text-[white] text-center p-9">التصنيفات</p>
 			<div class="flex items-center justify-center w-full ">
 				<hr class="w-[70%] text-center">
 
@@ -21,12 +29,12 @@
 
 					<!-- 2. Summary = the “select” you click -->
 					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
-																																										           ">
+																																																																																											           ">
 						<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M20.1278 3.46L15.7478 2C15.7478 3.06087 15.3264 4.07828 14.5763 4.82843C13.8261 5.57857 12.8087 6 11.7478 6C10.687 6 9.66956 5.57857 8.91942 4.82843C8.16927 4.07828 7.74784 3.06087 7.74784 2L3.36784 3.46C2.91523 3.61079 2.53142 3.91842 2.2857 4.32734C2.03997 4.73627 1.94852 5.21956 2.02784 5.69L2.60784 9.16C2.64592 9.39491 2.76652 9.60855 2.94798 9.76251C3.12944 9.91648 3.35987 10.0007 3.59784 10H5.74784V20C5.74784 21.1 6.64784 22 7.74784 22H15.7478C16.2783 22 16.787 21.7893 17.1621 21.4142C17.5371 21.0391 17.7478 20.5304 17.7478 20V10H19.8978C20.1358 10.0007 20.3662 9.91648 20.5477 9.76251C20.7292 9.60855 20.8498 9.39491 20.8878 9.16L21.4678 5.69C21.5472 5.21956 21.4557 4.73627 21.21 4.32734C20.9643 3.91842 20.5805 3.61079 20.1278 3.46Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 
-						<span class="text-[30px] font-[500]">الملابس</span>
+						<span class="text-[25px] font-[500]">الملابس</span>
 						<!-- 3. Arrow -->
 						<svg class="arrow" width="15" height="10" viewbox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6665 1.83332L7.33317 9.16666L-0.000163078 1.83332L1.83317 -9.53674e-06L7.33317 5.49999L12.8332 -9.53674e-06L14.6665 1.83332Z" fill="white" fill-opacity="0.72"/>
@@ -36,7 +44,7 @@
 
 					<!-- 4. The dropdown panel -->
 					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
-																																										           overflow-hidden">
+																																																																																											           overflow-hidden">
 						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
@@ -54,12 +62,13 @@
 
 					<!-- 2. Summary = the “select” you click -->
 					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
-																																										           ">
-						<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M20.1278 3.46L15.7478 2C15.7478 3.06087 15.3264 4.07828 14.5763 4.82843C13.8261 5.57857 12.8087 6 11.7478 6C10.687 6 9.66956 5.57857 8.91942 4.82843C8.16927 4.07828 7.74784 3.06087 7.74784 2L3.36784 3.46C2.91523 3.61079 2.53142 3.91842 2.2857 4.32734C2.03997 4.73627 1.94852 5.21956 2.02784 5.69L2.60784 9.16C2.64592 9.39491 2.76652 9.60855 2.94798 9.76251C3.12944 9.91648 3.35987 10.0007 3.59784 10H5.74784V20C5.74784 21.1 6.64784 22 7.74784 22H15.7478C16.2783 22 16.787 21.7893 17.1621 21.4142C17.5371 21.0391 17.7478 20.5304 17.7478 20V10H19.8978C20.1358 10.0007 20.3662 9.91648 20.5477 9.76251C20.7292 9.60855 20.8498 9.39491 20.8878 9.16L21.4678 5.69C21.5472 5.21956 21.4557 4.73627 21.21 4.32734C20.9643 3.91842 20.5805 3.61079 20.1278 3.46Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																																																																																											           ">
+						<svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M11.6085 1.45832H11.7252C12.4998 1.45832 13.1683 1.45832 13.7038 1.53065C14.2778 1.60765 14.8273 1.78149 15.273 2.22715C15.7187 2.67282 15.8925 3.22349 15.9695 3.79632C16.0162 4.13349 16.0325 4.52315 16.0383 4.95832H16.7068C17.7481 4.95839 18.775 5.20084 19.7063 5.66649L19.844 5.73649C20.9453 4.54649 22.8937 4.52315 24.3543 5.36665C26.0017 6.31749 27.0062 8.35799 26.0343 10.0415C25.0625 11.725 22.7933 11.8743 21.146 10.9235C19.8393 10.1687 18.9352 8.72782 19.1055 7.32315L18.9235 7.23215C18.2353 6.8879 17.4764 6.70855 16.7068 6.70832H16.0418V8.16665L16.0407 8.21799C19.2805 9.66815 21.6033 12.6817 21.853 16.268C21.8763 16.3668 21.8818 16.4679 21.8693 16.5713C21.8732 16.6833 21.8752 16.7965 21.8752 16.9108C21.8752 19.3853 20.8835 21.6358 19.2688 23.3322L19.2478 23.3532C18.998 23.6326 18.7217 23.8874 18.423 24.1138C18.08 24.3658 17.6717 24.5828 17.0907 24.8325C15.8248 25.375 14.9043 25.375 13.4367 25.375H9.897C8.42933 25.375 7.50883 25.375 6.243 24.8325C5.662 24.5828 5.25366 24.3658 4.91066 24.1138C4.61191 23.8874 4.33569 23.6326 4.08583 23.3532L4.06483 23.3333C2.45016 21.6358 1.4585 19.3853 1.4585 16.9108C1.4585 13.0433 3.86183 9.75449 7.293 8.21915L7.29183 8.16665V6.41665L7.293 6.36999L7.29183 6.32565V5.77499C7.29183 4.99915 7.29183 4.33065 7.36416 3.79515C7.44116 3.22232 7.615 2.67165 8.06066 2.22599C8.50633 1.78032 9.057 1.60649 9.62983 1.52949C10.1653 1.45715 10.8338 1.45715 11.6097 1.45715M19.8965 15.0838C19.0157 11.6515 15.7082 9.04399 11.6773 9.04049H11.6587C7.85533 9.04399 4.696 11.3645 3.61216 14.5098C3.94583 14.6568 4.28416 14.8202 4.62133 14.9847L4.76133 15.0535C5.18366 15.26 5.6095 15.4677 6.05633 15.6648C7.04683 16.1035 8.10033 16.4745 9.2705 16.6063C10.7393 16.772 11.8558 16.2622 13.2022 15.6473L13.215 15.6415C14.538 15.0372 16.085 14.3372 18.1092 14.6732C18.7263 14.7758 19.3388 14.9158 19.8965 15.0838ZM3.2365 16.2633C3.4325 16.3543 3.63783 16.4527 3.8525 16.5585L3.99366 16.6285C4.41366 16.8327 4.86866 17.0543 5.347 17.2667C6.41916 17.7415 7.65583 18.1872 9.07333 18.347C11.0287 18.5663 12.536 17.8768 13.8135 17.2923L13.9407 17.234C15.273 16.6273 16.3755 16.1607 17.821 16.3998C18.7252 16.5515 19.5442 16.7802 20.124 17.017C20.0972 18.9688 19.305 20.755 18.0007 22.1258C17.7312 22.4082 17.5853 22.5587 17.3893 22.7022C17.1957 22.8445 16.9215 23.0008 16.4012 23.2237C15.4853 23.6168 14.8962 23.625 13.3678 23.625H9.96583C8.4375 23.625 7.84833 23.6168 6.9325 23.2237C6.41216 23.002 6.13916 22.8445 5.94433 22.7022C5.74833 22.5587 5.6025 22.4082 5.333 22.1258C4.00533 20.7305 3.2085 18.9047 3.2085 16.9108C3.2085 16.693 3.21783 16.4772 3.2365 16.2633ZM14.2918 7.29165H9.04183V6.66982C9.11105 6.65738 9.18066 6.64065 9.25066 6.61965C9.48633 6.54615 9.7605 6.40032 9.96 6.11215C10.1537 5.83449 10.2085 5.52299 10.2085 5.24999C10.2085 4.97699 10.1537 4.66549 9.96 4.38665C9.78683 4.14279 9.53652 3.96441 9.2495 3.88032C9.20965 3.86765 9.16914 3.85714 9.12816 3.84882C9.17833 3.60849 9.24366 3.51865 9.2985 3.46382C9.365 3.39849 9.484 3.31565 9.86316 3.26549C10.268 3.21065 10.8175 3.20832 11.6668 3.20832C12.5162 3.20832 13.0668 3.21065 13.4705 3.26432C13.8497 3.31565 13.9687 3.39849 14.0352 3.46499C14.1017 3.53149 14.1845 3.65049 14.2358 4.02965C14.2895 4.43449 14.2918 4.98399 14.2918 5.83332V7.29165ZM22.021 9.40799C20.8777 8.74882 20.6653 7.67315 20.9827 7.12482C21.2977 6.57649 22.336 6.22299 23.4793 6.88215C24.6227 7.54132 24.835 8.61815 24.5177 9.16649C24.2027 9.71482 23.1643 10.0683 22.021 9.40799Z" fill="white"/>
 						</svg>
 
-						<span class="text-[30px] font-[500]">العطور</span>
+
+						<span class="text-[30px] md:text-[25px] font-[500]">العطور</span>
 						<!-- 3. Arrow -->
 						<svg class="arrow" width="15" height="10" viewbox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6665 1.83332L7.33317 9.16666L-0.000163078 1.83332L1.83317 -9.53674e-06L7.33317 5.49999L12.8332 -9.53674e-06L14.6665 1.83332Z" fill="white" fill-opacity="0.72"/>
@@ -69,41 +78,7 @@
 
 					<!-- 4. The dropdown panel -->
 					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
-																																										           overflow-hidden">
-						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
-						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
-						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
-					</ul>
-				</details>
-			</div>
-			<div class="flex items-center mt-[20px] justify-center w-full ">
-				<hr class="w-[70%] text-center">
-			</div>
-
-
-			<div class="w-full flex items-center mt-[30px] justify-center">
-
-				<details
-					class="relative inline-block w-full px-[50px]">
-
-					<!-- 2. Summary = the “select” you click -->
-					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
-																																										           ">
-						<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M20.1278 3.46L15.7478 2C15.7478 3.06087 15.3264 4.07828 14.5763 4.82843C13.8261 5.57857 12.8087 6 11.7478 6C10.687 6 9.66956 5.57857 8.91942 4.82843C8.16927 4.07828 7.74784 3.06087 7.74784 2L3.36784 3.46C2.91523 3.61079 2.53142 3.91842 2.2857 4.32734C2.03997 4.73627 1.94852 5.21956 2.02784 5.69L2.60784 9.16C2.64592 9.39491 2.76652 9.60855 2.94798 9.76251C3.12944 9.91648 3.35987 10.0007 3.59784 10H5.74784V20C5.74784 21.1 6.64784 22 7.74784 22H15.7478C16.2783 22 16.787 21.7893 17.1621 21.4142C17.5371 21.0391 17.7478 20.5304 17.7478 20V10H19.8978C20.1358 10.0007 20.3662 9.91648 20.5477 9.76251C20.7292 9.60855 20.8498 9.39491 20.8878 9.16L21.4678 5.69C21.5472 5.21956 21.4557 4.73627 21.21 4.32734C20.9643 3.91842 20.5805 3.61079 20.1278 3.46Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-
-						<span class="text-[30px] font-[500]">النظارات</span>
-						<!-- 3. Arrow -->
-						<svg class="arrow" width="15" height="10" viewbox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6665 1.83332L7.33317 9.16666L-0.000163078 1.83332L1.83317 -9.53674e-06L7.33317 5.49999L12.8332 -9.53674e-06L14.6665 1.83332Z" fill="white" fill-opacity="0.72"/>
-						</svg>
-
-					</summary>
-
-					<!-- 4. The dropdown panel -->
-					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
-																																										           overflow-hidden">
+																																																																																											           overflow-hidden">
 						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
@@ -122,12 +97,12 @@
 
 					<!-- 2. Summary = the “select” you click -->
 					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
-																																										           ">
-						<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M20.1278 3.46L15.7478 2C15.7478 3.06087 15.3264 4.07828 14.5763 4.82843C13.8261 5.57857 12.8087 6 11.7478 6C10.687 6 9.66956 5.57857 8.91942 4.82843C8.16927 4.07828 7.74784 3.06087 7.74784 2L3.36784 3.46C2.91523 3.61079 2.53142 3.91842 2.2857 4.32734C2.03997 4.73627 1.94852 5.21956 2.02784 5.69L2.60784 9.16C2.64592 9.39491 2.76652 9.60855 2.94798 9.76251C3.12944 9.91648 3.35987 10.0007 3.59784 10H5.74784V20C5.74784 21.1 6.64784 22 7.74784 22H15.7478C16.2783 22 16.787 21.7893 17.1621 21.4142C17.5371 21.0391 17.7478 20.5304 17.7478 20V10H19.8978C20.1358 10.0007 20.3662 9.91648 20.5477 9.76251C20.7292 9.60855 20.8498 9.39491 20.8878 9.16L21.4678 5.69C21.5472 5.21956 21.4557 4.73627 21.21 4.32734C20.9643 3.91842 20.5805 3.61079 20.1278 3.46Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																																																																																											           ">
+						<svg width="43" height="16" viewbox="0 0 43 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.5312 5.78125C18.5312 4.93587 18.8671 4.12512 19.4648 3.52735C20.0626 2.92958 20.8734 2.59375 21.7188 2.59375C22.5641 2.59375 23.3749 2.92958 23.9727 3.52735C24.5704 4.12512 24.9062 4.93587 24.9062 5.78125M40.8438 2.59375H42.4375M40.8438 2.59375C40.8438 12.1562 39.25 15.3438 32.875 15.3438C26.5 15.3438 24.9062 12.1562 24.9062 2.59375C24.9062 2.59375 26.5 1 32.875 1C39.25 1 40.8438 2.59375 40.8438 2.59375ZM2.59375 2.59375H1M2.59375 2.59375C2.59375 12.1562 4.1875 15.3438 10.5625 15.3438C16.9375 15.3438 18.5312 12.1562 18.5312 2.59375C18.5312 2.59375 16.9375 1 10.5625 1C4.1875 1 2.59375 2.59375 2.59375 2.59375Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 
-						<span class="text-[30px] font-[500]">الاحذية</span>
+						<span class="text-[30px] md:text-[25px] font-[500]">النظارات</span>
 						<!-- 3. Arrow -->
 						<svg class="arrow" width="15" height="10" viewbox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6665 1.83332L7.33317 9.16666L-0.000163078 1.83332L1.83317 -9.53674e-06L7.33317 5.49999L12.8332 -9.53674e-06L14.6665 1.83332Z" fill="white" fill-opacity="0.72"/>
@@ -137,7 +112,43 @@
 
 					<!-- 4. The dropdown panel -->
 					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
-																																										           overflow-hidden">
+																																																																																											           overflow-hidden">
+						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
+						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
+						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
+					</ul>
+				</details>
+			</div>
+			<div class="flex items-center mt-[20px] justify-center w-full ">
+				<hr class="w-[70%] text-center">
+			</div>
+
+
+			<div class="w-full flex items-center mt-[30px] justify-center">
+
+				<details
+					class="relative inline-block w-full px-[50px]">
+
+					<!-- 2. Summary = the “select” you click -->
+					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
+																																																																																											           ">
+						<svg width="33" height="33" viewbox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.7362 24.75H22.0509C26.0852 24.75 28.1009 24.75 29.3316 23.2141C31.6649 20.2991 29.0057 12.5441 27.3956 9.625C26.8497 12.925 21.2273 12.8329 19.1799 12.375C20.5439 9.62638 18.7234 8.70925 17.8132 8.25H17.8104C13.7501 13.0625 5.06695 15.6805 2.93982 20.9261C2.01995 23.1921 4.6407 24.75 6.7362 24.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M30.25 19.25C24.5231 21.2163 20.9949 21.7855 16.4697 20.3555C15.0989 19.9224 14.4141 19.7051 13.9865 19.734C13.5602 19.7643 12.6871 20.1699 10.9436 20.9839C8.767 21.9986 5.77913 22.583 2.75 21.1173M14.4375 13.0625L12.375 11M11.6875 15.125L9.625 13.0625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+
+
+						<span class="text-[30px] md:text-[25px] font-[500]">الاحذية</span>
+						<!-- 3. Arrow -->
+						<svg class="arrow" width="15" height="10" viewbox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6665 1.83332L7.33317 9.16666L-0.000163078 1.83332L1.83317 -9.53674e-06L7.33317 5.49999L12.8332 -9.53674e-06L14.6665 1.83332Z" fill="white" fill-opacity="0.72"/>
+						</svg>
+
+					</summary>
+
+					<!-- 4. The dropdown panel -->
+					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
+																																																																																											           overflow-hidden">
 						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
@@ -151,9 +162,9 @@
 
 		</div>
 
-		<div class="col-span-6 pr-[40px] w-full h-full">
+		<div class="col-span-6 pr-[40px] md:col-span-8 md:px-[20px] w-full h-full">
 			<p class="text-[30px] font-[700] text-[white] mt-[60px]">تسوق حسب الماركة:</p>
-			<div class="w-full mt-[50px] flex flex-wrap gap-[20px] item-center justify-between ">
+			<div class="w-full mt-[50px] md:mt-[100px] flex flex-wrap gap-[20px] md:justify-center md:gap-[50px]  item-center justify-between ">
 				<img src="{{ asset('images/adidassingle.png') }}" class="w-[200px] card-single rounded-[20px] object-cover md:-translate-y-[70px] h-[150px]" alt="Hero Section Image"/>
 				<img src="{{ asset('images/nikesingle.png') }}" class="w-[200px] card-single rounded-[20px] object-contain md:-translate-y-[70px] h-[150px]" alt="Hero Section Image"/>
 				<img src="{{ asset('images/zarasingle.png') }}" class="w-[200px]  card-single rounded-[20px] object-contain md:-translate-y-[70px] h-[150px]" alt="Hero Section Image"/>
@@ -162,47 +173,59 @@
 
 			<p class="text-[30px] font-[700] text-[white] text-start mt-[80px]">
 				الكل:</p>
-			<div class="flex gap-[30px] items-center justify-start flex-wrap my-[50px]" id="card" ></div>
+			<div class="flex gap-[30px] items-center justify-start md:justify-center flex-wrap my-[50px]" id="card"></div>
 
 		</div>
 	</div>
 	 <script>
-		const arr=[
-		  {id:1,title:'قميص SLIM FIT',descreption:'مجموعة ستار لايك',price: 230 , img:'{{ asset("images/1.png") }}'},
-		  {id:2,title:'جاكيت PATCHWORK بتطريز مخرم',descreption:'',price:550  , img:'{{ asset("images/2.png") }}'},
-		  {id:3,title:'قميص برسمة زهور',descreption:'مجموعة ستار لايك',price: 320 , img:'{{ asset("images/3.png") }}'},
-		  {id:4,title:'بنطلون تشينو REGULAR FIT',descreption:'مجموعة ستار لايك',price: 240 , img:'{{ asset("images/4.png") }}'},
-		  {id:5,title:'برمودا مغسول CANVAS',descreption:'مجموعة ستار لايك',price:280  , img:'{{ asset("images/5.png") }}'},
-		  {id:6,title:'قميص بطبعة تجريدية',descreption:'مجموعة ستار لايك',price: 230 , img:'{{ asset("images/6.png") }}'},
-		  {id:7,title:'سويت شيرت بولو INTERLOCK بياقة',descreption:'',price: 280 , img:'{{ asset("images/7.png") }}'},
-		  {id:8,title:'حذاء رياضي بنعل سميك',descreption:'مجموعة ستار لايك',price:259  , img:'{{ asset("images/8.png") }}'},
-		  {id:9,title:'بولو مغزول بتخريمات',descreption:'',price: 250 , img:'{{ asset("images/9.png") }}'},
-		  {id:10,title:'ماء عطري FOR HIM RED EDITION سعة 100 مل ',descreption:'',price: 230 , img:'{{ asset("images/10.png") }}'},
-		  {id:11,title:'TOP مغزول PEPLUM بربطات',descreption:'',price: 199 , img:'{{ asset("images/11.png") }}'},
-		  {id:12,title:'جاكيت فيست بتطريز وشُرابات',descreption:'',price: 259 , img:'{{ asset("images/12.png") }}'},
-		
-		];
-		const contaner =document.getElementById('card')
-		const card = arr.map(item =>`
-			<div class="h-[286px] max-w-[300px] w-[210px] rounded-[30px] relative">
-							<img class="w-full object-cover h-full rounded-[30px]" src="${item.img}" alt="">
-							<div class=" absolute bottom-[10px] w-full flex items-center justify-center">
-		
-								<div class="h-[109px] w-[90%] rounded-[30px] p-[20px] text-start  decription-slider">
-									<p class="font-[900] text-[12px]">${item.title}</p>
-									<p class="text-[9px] font-[400] text-[#00000066]">${item.descreption}</p>
-									<div class="flex items-center mt-[20px] justify-between">
-										<div class="flex  items-center ">
-											<p>${item.price}</p>
-											<img src="./images/realblack.png" class="w-[18px] h-[18px]" alt="">
-										</div>
-										<button class=" w-[78px] h-[28px] bg-[white] text-[black] rounded-[100px] text-[12px]">اشتر الان</button>
-									</div>
-								</div>
-							</div>
-						</div>
-		
-		`).join('');
-		contaner.innerHTML=card;
-		</script>
+									const arr=[
+									  {id:1,title:'قميص SLIM FIT',descreption:'مجموعة ستار لايك',price: 230 , img:'{{ asset("images/1.png") }}'},
+									  {id:2,title:'جاكيت PATCHWORK بتطريز مخرم',descreption:'',price:550  , img:'{{ asset("images/2.png") }}'},
+									  {id:3,title:'قميص برسمة زهور',descreption:'مجموعة ستار لايك',price: 320 , img:'{{ asset("images/3.png") }}'},
+									  {id:4,title:'بنطلون تشينو REGULAR FIT',descreption:'مجموعة ستار لايك',price: 240 , img:'{{ asset("images/4.png") }}'},
+									  {id:5,title:'برمودا مغسول CANVAS',descreption:'مجموعة ستار لايك',price:280  , img:'{{ asset("images/5.png") }}'},
+									  {id:6,title:'قميص بطبعة تجريدية',descreption:'مجموعة ستار لايك',price: 230 , img:'{{ asset("images/6.png") }}'},
+									  {id:7,title:'سويت شيرت بولو INTERLOCK بياقة',descreption:'',price: 280 , img:'{{ asset("images/7.png") }}'},
+									  {id:8,title:'حذاء رياضي بنعل سميك',descreption:'مجموعة ستار لايك',price:259  , img:'{{ asset("images/8.png") }}'},
+									  {id:9,title:'بولو مغزول بتخريمات',descreption:'',price: 250 , img:'{{ asset("images/9.png") }}'},
+									  {id:10,title:'ماء عطري FOR HIM RED EDITION سعة 100 مل ',descreption:'',price: 230 , img:'{{ asset("images/10.png") }}'},
+									  {id:11,title:'TOP مغزول PEPLUM بربطات',descreption:'',price: 199 , img:'{{ asset("images/11.png") }}'},
+									  {id:12,title:'جاكيت فيست بتطريز وشُرابات',descreption:'',price: 259 , img:'{{ asset("images/12.png") }}'},
+									
+									];
+									const contaner =document.getElementById('card')
+									const card = arr.map(item =>`
+										<div class="h-[286px] max-w-[300px] w-[210px] rounded-[30px] relative">
+														<img class="w-full object-cover h-full rounded-[30px]" src="${item.img}" alt="">
+														<div class=" absolute bottom-[10px] w-full flex items-center justify-center">
+									
+															<div class="h-[109px] w-[90%] rounded-[30px] p-[20px] text-start  decription-slider">
+																<p class="font-[900] text-[12px]">${item.title}</p>
+																<p class="text-[9px] font-[400] text-[#00000066]">${item.descreption}</p>
+																<div class="flex items-center mt-[20px] justify-between">
+																	<div class="flex  items-center ">
+																		<p>${item.price}</p>
+																		<img src="./images/realblack.png" class="w-[18px] h-[18px]" alt="">
+																	</div>
+																	<button class=" w-[78px] h-[28px] bg-[white] text-[black] rounded-[100px] text-[12px]">اشتر الان</button>
+																</div>
+															</div>
+														</div>
+													</div>
+									
+									`).join('');
+									contaner.innerHTML=card;
+									</script>
+	 <script>
+			  document.addEventListener('DOMContentLoaded', () => {
+			    const btn     = document.getElementById('mobile-toggle');
+			    const sidebar = document.getElementById('sidebar');
+			
+			    btn.addEventListener('click', () => {
+			      // لو الصنف موجود يشيله، ولو مش موجود يضيفه
+			      sidebar.classList.toggle('sidebaractive');
+			    });
+			  });
+			</script>
+
 {% endblock %}
