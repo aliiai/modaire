@@ -418,3 +418,8 @@ box-shadow: 0px 7px 17px 0px #FCFCFC40 inset;
 }
   
 }
+.btn{
+  border: 1px solid #FFFFFF24;
+  backdrop-filter: blur(42.599998474121094px);
+
+}

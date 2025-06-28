@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block content %}
-	<div class="big-card grid grid-cols-8 h-full mx-[80px] md:mx-[30px] mt-[150px]">
+	<div class="big-card grid grid-cols-8 h-full mx-[80px] md:mx-[30px] mt-[150px] relative">
 		<button
 			id="mobile-toggle" class="col-span-1 hidden relative z-[51]  items-start" class="md:hidden p-4">
 			<!-- أيقونة الهامبرغر -->
@@ -29,7 +29,7 @@
 
 					<!-- 2. Summary = the “select” you click -->
 					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
-																																																																																											           ">
+																																																																																																																																																										           ">
 						<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M20.1278 3.46L15.7478 2C15.7478 3.06087 15.3264 4.07828 14.5763 4.82843C13.8261 5.57857 12.8087 6 11.7478 6C10.687 6 9.66956 5.57857 8.91942 4.82843C8.16927 4.07828 7.74784 3.06087 7.74784 2L3.36784 3.46C2.91523 3.61079 2.53142 3.91842 2.2857 4.32734C2.03997 4.73627 1.94852 5.21956 2.02784 5.69L2.60784 9.16C2.64592 9.39491 2.76652 9.60855 2.94798 9.76251C3.12944 9.91648 3.35987 10.0007 3.59784 10H5.74784V20C5.74784 21.1 6.64784 22 7.74784 22H15.7478C16.2783 22 16.787 21.7893 17.1621 21.4142C17.5371 21.0391 17.7478 20.5304 17.7478 20V10H19.8978C20.1358 10.0007 20.3662 9.91648 20.5477 9.76251C20.7292 9.60855 20.8498 9.39491 20.8878 9.16L21.4678 5.69C21.5472 5.21956 21.4557 4.73627 21.21 4.32734C20.9643 3.91842 20.5805 3.61079 20.1278 3.46Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
@@ -44,7 +44,7 @@
 
 					<!-- 4. The dropdown panel -->
 					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
-																																																																																											           overflow-hidden">
+																																																																																																																																																										           overflow-hidden">
 						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
@@ -62,7 +62,7 @@
 
 					<!-- 2. Summary = the “select” you click -->
 					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
-																																																																																											           ">
+																																																																																																																																																										           ">
 						<svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M11.6085 1.45832H11.7252C12.4998 1.45832 13.1683 1.45832 13.7038 1.53065C14.2778 1.60765 14.8273 1.78149 15.273 2.22715C15.7187 2.67282 15.8925 3.22349 15.9695 3.79632C16.0162 4.13349 16.0325 4.52315 16.0383 4.95832H16.7068C17.7481 4.95839 18.775 5.20084 19.7063 5.66649L19.844 5.73649C20.9453 4.54649 22.8937 4.52315 24.3543 5.36665C26.0017 6.31749 27.0062 8.35799 26.0343 10.0415C25.0625 11.725 22.7933 11.8743 21.146 10.9235C19.8393 10.1687 18.9352 8.72782 19.1055 7.32315L18.9235 7.23215C18.2353 6.8879 17.4764 6.70855 16.7068 6.70832H16.0418V8.16665L16.0407 8.21799C19.2805 9.66815 21.6033 12.6817 21.853 16.268C21.8763 16.3668 21.8818 16.4679 21.8693 16.5713C21.8732 16.6833 21.8752 16.7965 21.8752 16.9108C21.8752 19.3853 20.8835 21.6358 19.2688 23.3322L19.2478 23.3532C18.998 23.6326 18.7217 23.8874 18.423 24.1138C18.08 24.3658 17.6717 24.5828 17.0907 24.8325C15.8248 25.375 14.9043 25.375 13.4367 25.375H9.897C8.42933 25.375 7.50883 25.375 6.243 24.8325C5.662 24.5828 5.25366 24.3658 4.91066 24.1138C4.61191 23.8874 4.33569 23.6326 4.08583 23.3532L4.06483 23.3333C2.45016 21.6358 1.4585 19.3853 1.4585 16.9108C1.4585 13.0433 3.86183 9.75449 7.293 8.21915L7.29183 8.16665V6.41665L7.293 6.36999L7.29183 6.32565V5.77499C7.29183 4.99915 7.29183 4.33065 7.36416 3.79515C7.44116 3.22232 7.615 2.67165 8.06066 2.22599C8.50633 1.78032 9.057 1.60649 9.62983 1.52949C10.1653 1.45715 10.8338 1.45715 11.6097 1.45715M19.8965 15.0838C19.0157 11.6515 15.7082 9.04399 11.6773 9.04049H11.6587C7.85533 9.04399 4.696 11.3645 3.61216 14.5098C3.94583 14.6568 4.28416 14.8202 4.62133 14.9847L4.76133 15.0535C5.18366 15.26 5.6095 15.4677 6.05633 15.6648C7.04683 16.1035 8.10033 16.4745 9.2705 16.6063C10.7393 16.772 11.8558 16.2622 13.2022 15.6473L13.215 15.6415C14.538 15.0372 16.085 14.3372 18.1092 14.6732C18.7263 14.7758 19.3388 14.9158 19.8965 15.0838ZM3.2365 16.2633C3.4325 16.3543 3.63783 16.4527 3.8525 16.5585L3.99366 16.6285C4.41366 16.8327 4.86866 17.0543 5.347 17.2667C6.41916 17.7415 7.65583 18.1872 9.07333 18.347C11.0287 18.5663 12.536 17.8768 13.8135 17.2923L13.9407 17.234C15.273 16.6273 16.3755 16.1607 17.821 16.3998C18.7252 16.5515 19.5442 16.7802 20.124 17.017C20.0972 18.9688 19.305 20.755 18.0007 22.1258C17.7312 22.4082 17.5853 22.5587 17.3893 22.7022C17.1957 22.8445 16.9215 23.0008 16.4012 23.2237C15.4853 23.6168 14.8962 23.625 13.3678 23.625H9.96583C8.4375 23.625 7.84833 23.6168 6.9325 23.2237C6.41216 23.002 6.13916 22.8445 5.94433 22.7022C5.74833 22.5587 5.6025 22.4082 5.333 22.1258C4.00533 20.7305 3.2085 18.9047 3.2085 16.9108C3.2085 16.693 3.21783 16.4772 3.2365 16.2633ZM14.2918 7.29165H9.04183V6.66982C9.11105 6.65738 9.18066 6.64065 9.25066 6.61965C9.48633 6.54615 9.7605 6.40032 9.96 6.11215C10.1537 5.83449 10.2085 5.52299 10.2085 5.24999C10.2085 4.97699 10.1537 4.66549 9.96 4.38665C9.78683 4.14279 9.53652 3.96441 9.2495 3.88032C9.20965 3.86765 9.16914 3.85714 9.12816 3.84882C9.17833 3.60849 9.24366 3.51865 9.2985 3.46382C9.365 3.39849 9.484 3.31565 9.86316 3.26549C10.268 3.21065 10.8175 3.20832 11.6668 3.20832C12.5162 3.20832 13.0668 3.21065 13.4705 3.26432C13.8497 3.31565 13.9687 3.39849 14.0352 3.46499C14.1017 3.53149 14.1845 3.65049 14.2358 4.02965C14.2895 4.43449 14.2918 4.98399 14.2918 5.83332V7.29165ZM22.021 9.40799C20.8777 8.74882 20.6653 7.67315 20.9827 7.12482C21.2977 6.57649 22.336 6.22299 23.4793 6.88215C24.6227 7.54132 24.835 8.61815 24.5177 9.16649C24.2027 9.71482 23.1643 10.0683 22.021 9.40799Z" fill="white"/>
 						</svg>
@@ -78,7 +78,7 @@
 
 					<!-- 4. The dropdown panel -->
 					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
-																																																																																											           overflow-hidden">
+																																																																																																																																																										           overflow-hidden">
 						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
@@ -97,7 +97,7 @@
 
 					<!-- 2. Summary = the “select” you click -->
 					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
-																																																																																											           ">
+																																																																																																																																																										           ">
 						<svg width="43" height="16" viewbox="0 0 43 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M18.5312 5.78125C18.5312 4.93587 18.8671 4.12512 19.4648 3.52735C20.0626 2.92958 20.8734 2.59375 21.7188 2.59375C22.5641 2.59375 23.3749 2.92958 23.9727 3.52735C24.5704 4.12512 24.9062 4.93587 24.9062 5.78125M40.8438 2.59375H42.4375M40.8438 2.59375C40.8438 12.1562 39.25 15.3438 32.875 15.3438C26.5 15.3438 24.9062 12.1562 24.9062 2.59375C24.9062 2.59375 26.5 1 32.875 1C39.25 1 40.8438 2.59375 40.8438 2.59375ZM2.59375 2.59375H1M2.59375 2.59375C2.59375 12.1562 4.1875 15.3438 10.5625 15.3438C16.9375 15.3438 18.5312 12.1562 18.5312 2.59375C18.5312 2.59375 16.9375 1 10.5625 1C4.1875 1 2.59375 2.59375 2.59375 2.59375Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
@@ -112,7 +112,7 @@
 
 					<!-- 4. The dropdown panel -->
 					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
-																																																																																											           overflow-hidden">
+																																																																																																																																																										           overflow-hidden">
 						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
@@ -131,7 +131,7 @@
 
 					<!-- 2. Summary = the “select” you click -->
 					<summary class="flex items-center w-full justify-between cursor-pointer select-none list-none px-4 py-2  text-white rounded-lg
-																																																																																											           ">
+																																																																																																																																																										           ">
 						<svg width="33" height="33" viewbox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M6.7362 24.75H22.0509C26.0852 24.75 28.1009 24.75 29.3316 23.2141C31.6649 20.2991 29.0057 12.5441 27.3956 9.625C26.8497 12.925 21.2273 12.8329 19.1799 12.375C20.5439 9.62638 18.7234 8.70925 17.8132 8.25H17.8104C13.7501 13.0625 5.06695 15.6805 2.93982 20.9261C2.01995 23.1921 4.6407 24.75 6.7362 24.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 							<path d="M30.25 19.25C24.5231 21.2163 20.9949 21.7855 16.4697 20.3555C15.0989 19.9224 14.4141 19.7051 13.9865 19.734C13.5602 19.7643 12.6871 20.1699 10.9436 20.9839C8.767 21.9986 5.77913 22.583 2.75 21.1173M14.4375 13.0625L12.375 11M11.6875 15.125L9.625 13.0625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -148,7 +148,7 @@
 
 					<!-- 4. The dropdown panel -->
 					<ul class=" w-full mt-2  bg-white text-gray-800 rounded-md shadow-lg
-																																																																																											           overflow-hidden">
+																																																																																																																																																										           overflow-hidden">
 						<li class="px-4 py-2 hover:bg-gray-100">T-Shirts</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jeans</li>
 						<li class="px-4 py-2 hover:bg-gray-100">Jackets</li>
@@ -174,58 +174,206 @@
 			<p class="text-[30px] font-[700] text-[white] text-start mt-[80px]">
 				الكل:</p>
 			<div class="flex gap-[30px] items-center justify-start md:justify-center flex-wrap my-[50px]" id="card"></div>
-
+			<div class="mt-[50px] mb-[50px] relative w-full flex items-center justify-center">
+				<button class="text-[white] text-[20px] w-[260px] h-[38px] flex items-center justify-center btn rounded-[5px] font-[400]">تحميل المزيد</buttom>
+				<svg width="354" height="354" class="absolute bottom-[-150px] z-[-1] right-[-17%]" viewbox="0 0 354 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.81" filter="url(#filter0_f_1_398)">
+						<circle cx="177" cy="177" r="77" fill="url(#paint0_radial_1_398)"/>
+					</g>
+					<defs>
+						<filter id="filter0_f_1_398" x="0" y="0" width="354" height="354" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+							<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_398"/>
+						</filter>
+						<radialGradient id="paint0_radial_1_398" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(177 177) rotate(90) scale(77)">
+							<stop stop-color="#FED146" stop-opacity="0.3"/>
+							<stop offset="1" stop-color="#FED146" stop-opacity="0"/>
+						</radialGradient>
+					</defs>
+				</svg>
+			</div>
 		</div>
+
+		<svg class="absolute top-[-100px] right-[34%]  z-[-1]" width="562" height="412" viewbox="0 0 562 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_405)">
+				<circle cx="281" cy="131" r="181" fill="url(#paint0_radial_1_405)" fill-opacity="0.8"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_405" x="0" y="-150" width="562" height="562" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_405"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_405" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(281 131) rotate(90) scale(181)">
+					<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="536" class="absolute bottom-[-100px] z-[-1]  right-[5%]" height="536" viewbox="0 0 536 536" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.92" filter="url(#filter0_f_1_423)">
+				<circle cx="268" cy="268" r="168" fill="url(#paint0_radial_1_423)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_423" x="0" y="0" width="536" height="536" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_423"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_423" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(268 268) rotate(90) scale(168)">
+					<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="702" class="absolute bottom-[-100px]  z-[-1] left-[5%]" height="714" viewbox="0 0 702 714" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_420)">
+				<circle cx="345" cy="357" r="257" fill="url(#paint0_radial_1_420)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_420" x="-12" y="0" width="714" height="714" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_420"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_420" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(345 357) rotate(90) scale(257)">
+					<stop stop-color="#22A65B" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="849" class="absolute top-[-100px]  z-[-1] left-[5%]" height="918" viewbox="0 0 849 918" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_417)">
+				<circle cx="390" cy="459" r="359" fill="url(#paint0_radial_1_417)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_417" x="-69" y="0" width="918" height="918" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_417"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_417" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(390 459) rotate(90) scale(359)">
+					<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="772" class="absolute top-[10%] z-[-1] right-[5%]" height="822" viewbox="0 0 772 822" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.81" filter="url(#filter0_f_1_404)">
+				<circle cx="411" cy="411" r="311" fill="url(#paint0_radial_1_404)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_404" x="0" y="0" width="822" height="822" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_404"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_404" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(411 411) rotate(90) scale(311)">
+					<stop stop-color="#FED146" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#FED146" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="768" class="absolute top-0 z-[-1] right-[5%]" height="722" viewbox="0 0 768 722" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_401)">
+				<circle cx="384" cy="338" r="284" fill="url(#paint0_radial_1_401)" fill-opacity="0.4"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_401" x="0" y="-46" width="768" height="768" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_401"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_401" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(384 338) rotate(90) scale(284)">
+					<stop stop-color="#DDEDD1" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="268" class="absolute top-[10%] z-[-1] right-0" height="562" viewbox="0 0 268 562" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_418)">
+				<circle cx="281" cy="281" r="181" fill="url(#paint0_radial_1_418)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_418" x="0" y="0" width="562" height="562" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_418"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_418" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(281 281) rotate(90) scale(181)">
+					<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="328" class="absolute top-[10%] z-[-1] right-[10%]" height="328" viewbox="0 0 328 328" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.92" filter="url(#filter0_f_1_422)">
+				<circle cx="164" cy="164" r="64" fill="url(#paint0_radial_1_422)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_422" x="0" y="0" width="328" height="328" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_422"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_422" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(164 164) rotate(90) scale(64)">
+					<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+
 	</div>
 	 <script>
-									const arr=[
-									  {id:1,title:'قميص SLIM FIT',descreption:'مجموعة ستار لايك',price: 230 , img:'{{ asset("images/1.png") }}'},
-									  {id:2,title:'جاكيت PATCHWORK بتطريز مخرم',descreption:'',price:550  , img:'{{ asset("images/2.png") }}'},
-									  {id:3,title:'قميص برسمة زهور',descreption:'مجموعة ستار لايك',price: 320 , img:'{{ asset("images/3.png") }}'},
-									  {id:4,title:'بنطلون تشينو REGULAR FIT',descreption:'مجموعة ستار لايك',price: 240 , img:'{{ asset("images/4.png") }}'},
-									  {id:5,title:'برمودا مغسول CANVAS',descreption:'مجموعة ستار لايك',price:280  , img:'{{ asset("images/5.png") }}'},
-									  {id:6,title:'قميص بطبعة تجريدية',descreption:'مجموعة ستار لايك',price: 230 , img:'{{ asset("images/6.png") }}'},
-									  {id:7,title:'سويت شيرت بولو INTERLOCK بياقة',descreption:'',price: 280 , img:'{{ asset("images/7.png") }}'},
-									  {id:8,title:'حذاء رياضي بنعل سميك',descreption:'مجموعة ستار لايك',price:259  , img:'{{ asset("images/8.png") }}'},
-									  {id:9,title:'بولو مغزول بتخريمات',descreption:'',price: 250 , img:'{{ asset("images/9.png") }}'},
-									  {id:10,title:'ماء عطري FOR HIM RED EDITION سعة 100 مل ',descreption:'',price: 230 , img:'{{ asset("images/10.png") }}'},
-									  {id:11,title:'TOP مغزول PEPLUM بربطات',descreption:'',price: 199 , img:'{{ asset("images/11.png") }}'},
-									  {id:12,title:'جاكيت فيست بتطريز وشُرابات',descreption:'',price: 259 , img:'{{ asset("images/12.png") }}'},
-									
-									];
-									const contaner =document.getElementById('card')
-									const card = arr.map(item =>`
-										<div class="h-[286px] max-w-[300px] w-[210px] rounded-[30px] relative">
-														<img class="w-full object-cover h-full rounded-[30px]" src="${item.img}" alt="">
-														<div class=" absolute bottom-[10px] w-full flex items-center justify-center">
-									
-															<div class="h-[109px] w-[90%] rounded-[30px] p-[20px] text-start  decription-slider">
-																<p class="font-[900] text-[12px]">${item.title}</p>
-																<p class="text-[9px] font-[400] text-[#00000066]">${item.descreption}</p>
-																<div class="flex items-center mt-[20px] justify-between">
-																	<div class="flex  items-center ">
-																		<p>${item.price}</p>
-																		<img src="./images/realblack.png" class="w-[18px] h-[18px]" alt="">
-																	</div>
-																	<button class=" w-[78px] h-[28px] bg-[white] text-[black] rounded-[100px] text-[12px]">اشتر الان</button>
-																</div>
-															</div>
-														</div>
-													</div>
-									
-									`).join('');
-									contaner.innerHTML=card;
-									</script>
+			const arr=[
+			{id:1,title:'قميص SLIM FIT',descreption:'مجموعة ستار لايك',price: 230 , img:'{{ asset("images/1.png") }}'},
+			{id:2,title:'جاكيت PATCHWORK بتطريز مخرم',descreption:'',price:550  , img:'{{ asset("images/2.png") }}'},
+			{id:3,title:'قميص برسمة زهور',descreption:'مجموعة ستار لايك',price: 320 , img:'{{ asset("images/3.png") }}'},
+			{id:4,title:'بنطلون تشينو REGULAR FIT',descreption:'مجموعة ستار لايك',price: 240 , img:'{{ asset("images/4.png") }}'},
+			{id:5,title:'برمودا مغسول CANVAS',descreption:'مجموعة ستار لايك',price:280  , img:'{{ asset("images/5.png") }}'},
+			{id:6,title:'قميص بطبعة تجريدية',descreption:'مجموعة ستار لايك',price: 230 , img:'{{ asset("images/6.png") }}'},
+			{id:7,title:'سويت شيرت بولو INTERLOCK بياقة',descreption:'',price: 280 , img:'{{ asset("images/7.png") }}'},
+			{id:8,title:'حذاء رياضي بنعل سميك',descreption:'مجموعة ستار لايك',price:259  , img:'{{ asset("images/8.png") }}'},
+			{id:9,title:'بولو مغزول بتخريمات',descreption:'',price: 250 , img:'{{ asset("images/9.png") }}'},
+			{id:10,title:'ماء عطري FOR HIM RED EDITION سعة 100 مل ',descreption:'',price: 230 , img:'{{ asset("images/10.png") }}'},
+			{id:11,title:'TOP مغزول PEPLUM بربطات',descreption:'',price: 199 , img:'{{ asset("images/11.png") }}'},
+			{id:12,title:'جاكيت فيست بتطريز وشُرابات',descreption:'',price: 259 , img:'{{ asset("images/12.png") }}'},
+				
+				];
+				const contaner =document.getElementById('card')
+				const card = arr.map(item =>`
+					<div class="h-[286px] max-w-[300px] w-[210px] rounded-[30px] relative">
+									<img class="w-full object-cover h-full rounded-[30px]" src="${item.img}" alt="">
+									<div class=" absolute bottom-[10px] w-full flex items-center justify-center">
+																		
+										<div class="h-[109px] w-[90%] rounded-[30px] p-[20px] text-start  decription-slider">
+											<p class="font-[900] text-[12px]">${item.title}</p>
+											<p class="text-[9px] font-[400] text-[#00000066]">${item.descreption}</p>
+											<div class="flex items-center mt-[20px] justify-between">
+												<div class="flex  items-center ">
+													<p>${item.price}</p>
+													<img src="./images/realblack.png" class="w-[18px] h-[18px]" alt="">
+												</div>
+												<button class=" w-[78px] h-[28px] bg-[white] text-[black] rounded-[100px] text-[12px]">اشتر الان</button>
+											</div>
+										</div>
+									</div>
+								</div>
+																		
+				`).join('');
+				contaner.innerHTML=card;
+				</script>
 	 <script>
-			  document.addEventListener('DOMContentLoaded', () => {
-			    const btn     = document.getElementById('mobile-toggle');
-			    const sidebar = document.getElementById('sidebar');
-			
-			    btn.addEventListener('click', () => {
-			      // لو الصنف موجود يشيله، ولو مش موجود يضيفه
-			      sidebar.classList.toggle('sidebaractive');
-			    });
-			  });
-			</script>
+												  document.addEventListener('DOMContentLoaded', () => {
+												    const btn     = document.getElementById('mobile-toggle');
+												    const sidebar = document.getElementById('sidebar');
+												
+												    btn.addEventListener('click', () => {
+												      // لو الصنف موجود يشيله، ولو مش موجود يضيفه
+												      sidebar.classList.toggle('sidebaractive');
+												    });
+												  });
+												</script>
 
 {% endblock %}

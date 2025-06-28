@@ -6,7 +6,7 @@
 {% block content %}
 
 
-	<div class="flex items-center mt-[150px] flex-wrap mr-[80px] md:mr-[20px] justify-start">
+	<div class="flex items-center  flex-wrap mt-[150px] overflow-visible mr-[80px] md:mr-[20px] relative justify-start">
 		<div class="flex items-center  gap-[20px]">
 			<p class="text-[white] text-[26px] font-[400] ">الرئيسية</p>
 			<svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,6 +24,23 @@
 			</svg>
 		</div>
 		<p class="text-[white] text-[26px] font-[400] ">الاحذية الرجالية</p>
+		<svg width="562" class="absolute right-[386px] z-[-1] top-0" height="422" viewbox="0 0 562 422" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_263)">
+				<circle cx="281" cy="141" r="181" fill="url(#paint0_radial_1_263)" fill-opacity="0.8"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_263" x="0" y="-140" width="562" height="562" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_263"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_263" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(281 141) rotate(90) scale(181)">
+					<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+
 	</div>
 	<div class="flex items-center justify-center">
 		<div class="w-[50%] flex "></div>
@@ -33,10 +50,10 @@
 	<div class="flex justify-start items-start lg:flex-col-reverse">
 
 		<div
-			class="gallery-container w-[785px] md:items-center md:justify-center md:flex md:w-full md:flex-col-reverse mt-[50px]">
+			class="gallery-container w-[785px] md:items-center md:justify-center md:flex md:w-full md:flex-col-reverse mt-[50px]" id="container-slider">
 			<!-- الصور المصغرة (عمودي) -->
-			<div class="swiper thumbs-slider max-h-[530px] md:!w-full !m-0 md:!mt-[20px] !w-[150px]">
-				<div class="swiper-wrapper">
+			<div class="swiper thumbs-slider max-h-[530px] md:!w-full md:h-full !m-0 md:!mt-[20px] !w-[150px]">
+				<div class="swiper-wrapper pr-[20px] md:pr-[10px]">
 					<div class="swiper-slide !w-[110px] !h-[92px]"><img class="w-full h-full" src="{{ asset('images/shoose1.png') }}" alt=""></div>
 					<div class="swiper-slide !w-[110px] !h-[92px]"><img src="{{ asset('images/shoose2.png') }}" alt=""></div>
 					<div class="swiper-slide !w-[110px] !h-[92px]"><img src="{{ asset('images/shoose3.png') }}" alt=""></div>
@@ -68,7 +85,7 @@
 
 
 		</div>
-		<div class="mr-[40px] pt-[60px] md:mr-2">
+		<div class="mr-[40px] pt-[60px] md:mr-2 relative w-full">
 
 			<p class="text-[26px] text-start font-[700] text-[white] ">
 				حذاء جري رجالي خفيف بنقشة عصرية وراحة مثالية – فيروزي وبيج
@@ -81,9 +98,9 @@
 				: بني</p>
 
 			<div class="flex gap-[20px] mt-[20px] items-center justify-start">
-				<div class=" !w-[110px] !h-[92px]"><img src="{{ asset('images/shoose1.png') }}" alt=""></div>
-				<div class=" !w-[110px] !h-[92px]"><img src="{{ asset('images/blackshoose.png') }}" alt=""></div>
-				<div class=" !w-[110px] !h-[92px]"><img src="{{ asset('images/whiteshoose.png') }}" alt=""></div>
+				<div id="shoose1" class=" !w-[110px] !h-[92px]"><img src="{{ asset('images/shoose1.png') }}" alt=""></div>
+				<div id="blackshoose" class=" !w-[110px] !h-[92px]"><img src="{{ asset('images/blackshoose.png') }}" alt=""></div>
+				<div id="whiteshoose" class=" !w-[110px] !h-[92px]"><img src="{{ asset('images/whiteshoose.png') }}" alt=""></div>
 			</div>
 			<p class="text-[22px] font-[700] text-[white] mt-[60px]">القياس:
 			</p>
@@ -94,15 +111,15 @@
 					class="relative select-single mt-[20px] text-[26px] rounded-[16px] font-[700] text-[white] w-[360px] h-[56px] ">
 					<!-- الـ select -->
 					<select class="block w-full
-									 bg-[#373232]
-												     border border-white
-										rounded-lg
-									  py-3 px-4
-									  text-[20px]
-										text-center
-									text-white
-										appearance-none
-										focus:outline-none">
+																																																																															 bg-[#373232]
+																																																																																		     border border-white
+																																																																																rounded-lg
+																																																																															  py-3 px-4
+																																																																															  text-[20px]
+																																																																																text-center
+																																																																															text-white
+																																																																																appearance-none
+																																																																																focus:outline-none">
 						<option value="" disabled selected>اختر القياس</option>
 						<option>XS</option>
 						<option>S</option>
@@ -127,123 +144,261 @@
 					اضف الى السلة
 				</button>
 			</div>
+			<svg width="209" class="absolute left-0 top-[9%]" height="361" viewbox="0 0 209 361" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g opacity="0.92" filter="url(#filter0_f_1_277)">
+					<circle cx="28.5" cy="180.5" r="80.5" fill="url(#paint0_radial_1_277)"/>
+				</g>
+				<defs>
+					<filter id="filter0_f_1_277" x="-152" y="0" width="361" height="361" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+						<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+						<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_277"/>
+					</filter>
+					<radialGradient id="paint0_radial_1_277" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(28.5 180.5) rotate(90) scale(80.5)">
+						<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</radialGradient>
+				</defs>
+			</svg>
+			<svg width="323" class="absolute left-0 bottom-[-315px]" height="562" viewbox="0 0 323 562" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g opacity="0.82" filter="url(#filter0_f_1_274)">
+					<circle cx="42" cy="281" r="181" fill="url(#paint0_radial_1_274)"/>
+				</g>
+				<defs>
+					<filter id="filter0_f_1_274" x="-239" y="0" width="562" height="562" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+						<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+						<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_274"/>
+					</filter>
+					<radialGradient id="paint0_radial_1_274" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(42 281) rotate(90) scale(181)">
+						<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
+						<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+					</radialGradient>
+				</defs>
+			</svg>
+			<svg width="354" class="absolute left-[38%] z-[-1] top-[39%]" height="354" viewbox="0 0 354 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g opacity="0.81" filter="url(#filter0_f_1_262)">
+					<circle cx="177" cy="177" r="77" fill="url(#paint0_radial_1_262)"/>
+				</g>
+				<defs>
+					<filter id="filter0_f_1_262" x="0" y="0" width="354" height="354" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+						<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+						<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_262"/>
+					</filter>
+					<radialGradient id="paint0_radial_1_262" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(177 177) rotate(90) scale(77)">
+						<stop stop-color="#FED146" stop-opacity="0.3"/>
+						<stop offset="1" stop-color="#FED146" stop-opacity="0"/>
+					</radialGradient>
+				</defs>
+			</svg>
+			<svg width="346" class="absolute left-[77%] z-[-1] top-[72%]" height="346" viewbox="0 0 346 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g opacity="0.82" filter="url(#filter0_f_1_276)">
+					<circle cx="173" cy="173" r="73" fill="url(#paint0_radial_1_276)"/>
+				</g>
+				<defs>
+					<filter id="filter0_f_1_276" x="0" y="0" width="346" height="346" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+						<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+						<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_276"/>
+					</filter>
+					<radialGradient id="paint0_radial_1_276" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(173 173) rotate(90) scale(73)">
+						<stop stop-color="#22A65B" stop-opacity="0.3"/>
+						<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+					</radialGradient>
+				</defs>
+			</svg>
 
 		</div>
 	</div>
-<p class="text-[white] font-[700] text-[26px] mt-[100px]">
-تفاصيل المنتج:
-</p>
-<p class="text-[white] font-[200] text-[20px] max-w-[40%] mt-[20px] ">
-حذاء جري رجالي بتصميم خفيف ومريح – حذاء رياضي بنقشة حروف، الجزء العلوي من القماش والنعل من مادة TPU، مع توسيد EVA لراحة القدم أثناء التمارين، الجري، والاستخدام اليومي – باللونين الأخضر الفيروزي والبيج، تصميم متعدد الاستخدامات | حذاء برباط | حذاء بنعل قماشي علوي
-</p>
-<p class="text-[white] font-[700] text-[26px] mt-[100px]">
-تفاصيل المنتج:
-</p>
 
-	<swiper-container class=" mt-[30px] relative " slides-per-view="2" centered-slides="true" loop="true" space-between="100" effect="coverflow" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="150" coverflow-effect-modifier="1" coverflow-effect-slideshadows="false" breakpoints='{
-									    "320":  { "slidesPerView": 1, "spaceBetween": 10,  "centeredSlides": false },
-									    "640":  { "slidesPerView": 1, "spaceBetween": 20 },
-									    "768":  { "slidesPerView": 2, "spaceBetween": 0  },
-									    "1024": { "slidesPerView": 2, "spaceBetween": 160 }
-									  }'>
-		<swiper-slide class="w-[540px]  justify-start rounded-[15px] flex flex-col h-[350px] slide">
-			<div class=" flex items-center mt-[30px] justify-between w-full ">
-				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
-					<img src="./images/person.png" class="w-[66px] h-[66px]" alt="">
-					<p class="text-[39px] font-[700] text-[white]">ليلى محمد</p>
-				</div>
-				<div>
-					<svg width="145" class="ml-[20px]" height="29" viewbox="0 0 145 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M72.5 0L75.7129 9.8885H86.1103L77.6987 15.9999L80.9116 25.8884L72.5 19.777L64.0883 25.8884L67.3013 15.9999L58.8896 9.8885H69.287L72.5 0Z" fill="#FDCD53"/>
-						<path d="M101.595 0L104.808 9.8885H115.205L106.793 15.9999L110.006 25.8884L101.595 19.777L93.1829 25.8884L96.3959 15.9999L87.9842 9.8885H98.3816L101.595 0Z" fill="#FDCD53"/>
-						<path d="M130.689 0L133.902 9.8885H144.3L135.888 15.9999L139.101 25.8884L130.689 19.777L122.278 25.8884L125.491 15.9999L117.079 9.8885H127.476L130.689 0Z" fill="#FDCD53"/>
-						<path d="M43.4053 0L46.6183 9.8885H57.0157L48.604 15.9999L51.817 25.8884L43.4053 19.777L34.9937 25.8884L38.2066 15.9999L29.795 9.8885H40.1924L43.4053 0Z" fill="#FDCD53"/>
-						<path d="M14.3108 0L17.5237 9.8885H27.9211L19.5095 15.9999L22.7224 25.8884L14.3108 19.777L5.89911 25.8884L9.11208 15.9999L0.700418 9.8885H11.0978L14.3108 0Z" fill="#FDCD53"/>
-					</svg>
+	{# description #}
+	<div class="relative">
 
-				</div>
-			</div>
-			<p class="text-[white] px-[20px] text-[30px] mt-[25px] text-start">الخدمة كانت أكثر من رائعة! التعامل راقٍ والتجاوب سريع، والتجربة ككل فاقت توقعاتي. أنصح بها بكل ثقة</p>
-		</swiper-slide>
-		<swiper-slide class="w-[540px]  justify-start rounded-[15px] flex flex-col h-[350px] slide">
-			<div class=" flex items-center mt-[30px] justify-between w-full ">
-				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
-					<img src="./images/person.png" class="w-[66px] h-[66px]" alt="">
-					<p class="text-[39px] font-[700] text-[white]">ليلى محمد</p>
-				</div>
-				<div>
-					<svg width="145" class="ml-[20px]" height="29" viewbox="0 0 145 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M72.5 0L75.7129 9.8885H86.1103L77.6987 15.9999L80.9116 25.8884L72.5 19.777L64.0883 25.8884L67.3013 15.9999L58.8896 9.8885H69.287L72.5 0Z" fill="#FDCD53"/>
-						<path d="M101.595 0L104.808 9.8885H115.205L106.793 15.9999L110.006 25.8884L101.595 19.777L93.1829 25.8884L96.3959 15.9999L87.9842 9.8885H98.3816L101.595 0Z" fill="#FDCD53"/>
-						<path d="M130.689 0L133.902 9.8885H144.3L135.888 15.9999L139.101 25.8884L130.689 19.777L122.278 25.8884L125.491 15.9999L117.079 9.8885H127.476L130.689 0Z" fill="#FDCD53"/>
-						<path d="M43.4053 0L46.6183 9.8885H57.0157L48.604 15.9999L51.817 25.8884L43.4053 19.777L34.9937 25.8884L38.2066 15.9999L29.795 9.8885H40.1924L43.4053 0Z" fill="#FDCD53"/>
-						<path d="M14.3108 0L17.5237 9.8885H27.9211L19.5095 15.9999L22.7224 25.8884L14.3108 19.777L5.89911 25.8884L9.11208 15.9999L0.700418 9.8885H11.0978L14.3108 0Z" fill="#FDCD53"/>
-					</svg>
+		<p class="text-[white] mr-[40px] md:mr-[10px] font-[700] text-[26px] mt-[100px]">
+			تفاصيل المنتج:
+		</p>
+		<p class="text-[white] mr-[40px] md:mr-[10px] font-[200] text-[20px] w-[40%] mt-[20px] md:!w-[80%] ">
+			حذاء جري رجالي بتصميم خفيف ومريح – حذاء رياضي بنقشة حروف، الجزء العلوي من القماش والنعل من مادة TPU، مع توسيد EVA لراحة القدم أثناء التمارين، الجري، والاستخدام اليومي – باللونين الأخضر الفيروزي والبيج، تصميم متعدد الاستخدامات | حذاء برباط | حذاء بنعل قماشي علوي
+		</p>
 
-				</div>
-			</div>
-			<p class="text-[white] px-[20px] text-[30px] mt-[25px] text-start">الخدمة كانت أكثر من رائعة! التعامل راقٍ والتجاوب سريع، والتجربة ككل فاقت توقعاتي. أنصح بها بكل ثقة</p>
-		</swiper-slide>
-
-
-		<swiper-slide class="w-[540px]  justify-start rounded-[15px] flex flex-col h-[350px] slide">
-			<div class=" flex items-center mt-[30px] justify-between w-full ">
-				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
-					<img src="./images/person.png" class="w-[66px] h-[66px]" alt="">
-					<p class="text-[39px] font-[700] text-[white]">ليلى محمد</p>
-				</div>
-				<div>
-					<svg width="145" class="ml-[20px]" height="29" viewbox="0 0 145 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M72.5 0L75.7129 9.8885H86.1103L77.6987 15.9999L80.9116 25.8884L72.5 19.777L64.0883 25.8884L67.3013 15.9999L58.8896 9.8885H69.287L72.5 0Z" fill="#FDCD53"/>
-						<path d="M101.595 0L104.808 9.8885H115.205L106.793 15.9999L110.006 25.8884L101.595 19.777L93.1829 25.8884L96.3959 15.9999L87.9842 9.8885H98.3816L101.595 0Z" fill="#FDCD53"/>
-						<path d="M130.689 0L133.902 9.8885H144.3L135.888 15.9999L139.101 25.8884L130.689 19.777L122.278 25.8884L125.491 15.9999L117.079 9.8885H127.476L130.689 0Z" fill="#FDCD53"/>
-						<path d="M43.4053 0L46.6183 9.8885H57.0157L48.604 15.9999L51.817 25.8884L43.4053 19.777L34.9937 25.8884L38.2066 15.9999L29.795 9.8885H40.1924L43.4053 0Z" fill="#FDCD53"/>
-						<path d="M14.3108 0L17.5237 9.8885H27.9211L19.5095 15.9999L22.7224 25.8884L14.3108 19.777L5.89911 25.8884L9.11208 15.9999L0.700418 9.8885H11.0978L14.3108 0Z" fill="#FDCD53"/>
-					</svg>
-
-				</div>
-			</div>
-			<p class="text-[white] px-[20px] text-[30px] mt-[25px] text-start">الخدمة كانت أكثر من رائعة! التعامل راقٍ والتجاوب سريع، والتجربة ككل فاقت توقعاتي. أنصح بها بكل ثقة</p>
-		</swiper-slide>
-
-		<swiper-slide class="w-[540px]  justify-start rounded-[15px] flex flex-col h-[350px] slide">
-			<div class=" flex items-center mt-[30px] justify-between w-full ">
-				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
-					<img src="./images/person.png" class="w-[66px] h-[66px]" alt="">
-					<p class="text-[39px] font-[700] text-[white]">ليلى محمد</p>
-				</div>
-				<div>
-					<svg width="145" class="ml-[20px]" height="29" viewbox="0 0 145 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M72.5 0L75.7129 9.8885H86.1103L77.6987 15.9999L80.9116 25.8884L72.5 19.777L64.0883 25.8884L67.3013 15.9999L58.8896 9.8885H69.287L72.5 0Z" fill="#FDCD53"/>
-						<path d="M101.595 0L104.808 9.8885H115.205L106.793 15.9999L110.006 25.8884L101.595 19.777L93.1829 25.8884L96.3959 15.9999L87.9842 9.8885H98.3816L101.595 0Z" fill="#FDCD53"/>
-						<path d="M130.689 0L133.902 9.8885H144.3L135.888 15.9999L139.101 25.8884L130.689 19.777L122.278 25.8884L125.491 15.9999L117.079 9.8885H127.476L130.689 0Z" fill="#FDCD53"/>
-						<path d="M43.4053 0L46.6183 9.8885H57.0157L48.604 15.9999L51.817 25.8884L43.4053 19.777L34.9937 25.8884L38.2066 15.9999L29.795 9.8885H40.1924L43.4053 0Z" fill="#FDCD53"/>
-						<path d="M14.3108 0L17.5237 9.8885H27.9211L19.5095 15.9999L22.7224 25.8884L14.3108 19.777L5.89911 25.8884L9.11208 15.9999L0.700418 9.8885H11.0978L14.3108 0Z" fill="#FDCD53"/>
-					</svg>
-
-				</div>
-			</div>
-			<p class="text-[white] px-[20px] text-[30px] mt-[25px] text-start">الخدمة كانت أكثر من رائعة! التعامل راقٍ والتجاوب سريع، والتجربة ككل فاقت توقعاتي. أنصح بها بكل ثقة</p>
-		</swiper-slide>
-
-
-		<svg width="821" class="absolute bottom-[-100%] right-[1300px]" height="821" viewbox="0 0 821 821" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<g filter="url(#filter0_f_1_64)">
-				<circle cx="410.5" cy="410.5" r="310.5" fill="url(#paint0_radial_1_64)"/>
+		<svg width="270" class="absolute right-0 z-[-1] top-[-266px]" height="562" viewbox="0 0 270 562" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_275)">
+				<circle cx="281" cy="281" r="181" fill="url(#paint0_radial_1_275)"/>
 			</g>
 			<defs>
-				<filter id="filter0_f_1_64" x="0" y="0" width="821" height="821" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<filter id="filter0_f_1_275" x="0" y="0" width="562" height="562" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
 					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
 					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_64"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_275"/>
 				</filter>
-				<radialGradient id="paint0_radial_1_64" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(410.5 410.5) rotate(90) scale(310.5)">
+				<radialGradient id="paint0_radial_1_275" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(281 281) rotate(90) scale(181)">
 					<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
 					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
 				</radialGradient>
 			</defs>
 		</svg>
-		<svg width="596" class="absolute bottom-[-56%] left-[-1200px]" height="596" viewbox="0 0 596 596" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg width="323" class="absolute left-0 z-[-1] top-[-266px]" height="562" viewbox="0 0 323 562" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_274)">
+				<circle cx="42" cy="281" r="181" fill="url(#paint0_radial_1_274)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_274" x="-239" y="0" width="562" height="562" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_274"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_274" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(42 281) rotate(90) scale(181)">
+					<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="401" class="absolute right-[44%] z-[-1] bottom-[-266px]" height="401" viewbox="0 0 401 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.82" filter="url(#filter0_f_1_261)">
+				<circle cx="200.5" cy="200.5" r="100.5" fill="url(#paint0_radial_1_261)" fill-opacity="0.4"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_261" x="0" y="0" width="401" height="401" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_261"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_261" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(200.5 200.5) rotate(90) scale(100.5)">
+					<stop stop-color="#DDEDD1" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="328" class="absolute left-[56%] z-[-1] bottom-[-66px]" height="328" viewbox="0 0 328 328" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.92" filter="url(#filter0_f_1_278)">
+				<circle cx="164" cy="164" r="64" fill="url(#paint0_radial_1_278)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_278" x="0" y="0" width="328" height="328" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_278"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_278" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(164 164) rotate(90) scale(64)">
+					<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+
+	</div>
+	<p class="text-[white] mr-[20px] md:mr-[10px] font-[700] text-[26px] mt-[100px]">
+		التعليقات:
+	</p>
+
+
+	{# comments #}
+	<swiper-container class=" mt-[30px] relative mb-[150px]" slides-per-view="2" centered-slides="true" loop="true" space-between="100" effect="coverflow" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="150" coverflow-effect-modifier="1" coverflow-effect-slideshadows="false" breakpoints='{
+																																							    "320":  { "slidesPerView": 1, "spaceBetween": 10,  "centeredSlides": false },
+																																							    "640":  { "slidesPerView": 1, "spaceBetween": 20 },
+																																							    "768":  { "slidesPerView": 2, "spaceBetween": 0  },
+																																							  "1024": { "slidesPerView": 2, "spaceBetween": 160 }
+																																							  }'>
+		<swiper-slide class="w-[540px]  justify-start rounded-[15px] flex flex-col h-[350px] slide">
+			<div class=" flex items-center mt-[30px] justify-between w-full ">
+				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
+					<img src="./images/person.png" class="w-[66px] h-[66px]" alt="">
+					<p class="text-[39px] font-[700] text-[white]">ليلى محمد</p>
+				</div>
+				<div>
+					<svg width="145" class="ml-[20px]" height="29" viewbox="0 0 145 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M72.5 0L75.7129 9.8885H86.1103L77.6987 15.9999L80.9116 25.8884L72.5 19.777L64.0883 25.8884L67.3013 15.9999L58.8896 9.8885H69.287L72.5 0Z" fill="#FDCD53"/>
+						<path d="M101.595 0L104.808 9.8885H115.205L106.793 15.9999L110.006 25.8884L101.595 19.777L93.1829 25.8884L96.3959 15.9999L87.9842 9.8885H98.3816L101.595 0Z" fill="#FDCD53"/>
+						<path d="M130.689 0L133.902 9.8885H144.3L135.888 15.9999L139.101 25.8884L130.689 19.777L122.278 25.8884L125.491 15.9999L117.079 9.8885H127.476L130.689 0Z" fill="#FDCD53"/>
+						<path d="M43.4053 0L46.6183 9.8885H57.0157L48.604 15.9999L51.817 25.8884L43.4053 19.777L34.9937 25.8884L38.2066 15.9999L29.795 9.8885H40.1924L43.4053 0Z" fill="#FDCD53"/>
+						<path d="M14.3108 0L17.5237 9.8885H27.9211L19.5095 15.9999L22.7224 25.8884L14.3108 19.777L5.89911 25.8884L9.11208 15.9999L0.700418 9.8885H11.0978L14.3108 0Z" fill="#FDCD53"/>
+					</svg>
+
+				</div>
+			</div>
+			<p class="text-[white] px-[20px] text-[30px] mt-[25px] text-start">الخدمة كانت أكثر من رائعة! التعامل راقٍ والتجاوب سريع، والتجربة ككل فاقت توقعاتي. أنصح بها بكل ثقة</p>
+		</swiper-slide>
+		<swiper-slide class="w-[540px]  justify-start rounded-[15px] flex flex-col h-[350px] slide">
+			<div class=" flex items-center mt-[30px] justify-between w-full ">
+				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
+					<img src="./images/person.png" class="w-[66px] h-[66px]" alt="">
+					<p class="text-[39px] font-[700] text-[white]">ليلى محمد</p>
+				</div>
+				<div>
+					<svg width="145" class="ml-[20px]" height="29" viewbox="0 0 145 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M72.5 0L75.7129 9.8885H86.1103L77.6987 15.9999L80.9116 25.8884L72.5 19.777L64.0883 25.8884L67.3013 15.9999L58.8896 9.8885H69.287L72.5 0Z" fill="#FDCD53"/>
+						<path d="M101.595 0L104.808 9.8885H115.205L106.793 15.9999L110.006 25.8884L101.595 19.777L93.1829 25.8884L96.3959 15.9999L87.9842 9.8885H98.3816L101.595 0Z" fill="#FDCD53"/>
+						<path d="M130.689 0L133.902 9.8885H144.3L135.888 15.9999L139.101 25.8884L130.689 19.777L122.278 25.8884L125.491 15.9999L117.079 9.8885H127.476L130.689 0Z" fill="#FDCD53"/>
+						<path d="M43.4053 0L46.6183 9.8885H57.0157L48.604 15.9999L51.817 25.8884L43.4053 19.777L34.9937 25.8884L38.2066 15.9999L29.795 9.8885H40.1924L43.4053 0Z" fill="#FDCD53"/>
+						<path d="M14.3108 0L17.5237 9.8885H27.9211L19.5095 15.9999L22.7224 25.8884L14.3108 19.777L5.89911 25.8884L9.11208 15.9999L0.700418 9.8885H11.0978L14.3108 0Z" fill="#FDCD53"/>
+					</svg>
+
+				</div>
+			</div>
+			<p class="text-[white] px-[20px] text-[30px] mt-[25px] text-start">الخدمة كانت أكثر من رائعة! التعامل راقٍ والتجاوب سريع، والتجربة ككل فاقت توقعاتي. أنصح بها بكل ثقة</p>
+		</swiper-slide>
+
+
+		<swiper-slide class="w-[540px]  justify-start rounded-[15px] flex flex-col h-[350px] slide">
+			<div class=" flex items-center mt-[30px] justify-between w-full ">
+				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
+					<img src="./images/person.png" class="w-[66px] h-[66px]" alt="">
+					<p class="text-[39px] font-[700] text-[white]">ليلى محمد</p>
+				</div>
+				<div>
+					<svg width="145" class="ml-[20px]" height="29" viewbox="0 0 145 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M72.5 0L75.7129 9.8885H86.1103L77.6987 15.9999L80.9116 25.8884L72.5 19.777L64.0883 25.8884L67.3013 15.9999L58.8896 9.8885H69.287L72.5 0Z" fill="#FDCD53"/>
+						<path d="M101.595 0L104.808 9.8885H115.205L106.793 15.9999L110.006 25.8884L101.595 19.777L93.1829 25.8884L96.3959 15.9999L87.9842 9.8885H98.3816L101.595 0Z" fill="#FDCD53"/>
+						<path d="M130.689 0L133.902 9.8885H144.3L135.888 15.9999L139.101 25.8884L130.689 19.777L122.278 25.8884L125.491 15.9999L117.079 9.8885H127.476L130.689 0Z" fill="#FDCD53"/>
+						<path d="M43.4053 0L46.6183 9.8885H57.0157L48.604 15.9999L51.817 25.8884L43.4053 19.777L34.9937 25.8884L38.2066 15.9999L29.795 9.8885H40.1924L43.4053 0Z" fill="#FDCD53"/>
+						<path d="M14.3108 0L17.5237 9.8885H27.9211L19.5095 15.9999L22.7224 25.8884L14.3108 19.777L5.89911 25.8884L9.11208 15.9999L0.700418 9.8885H11.0978L14.3108 0Z" fill="#FDCD53"/>
+					</svg>
+
+				</div>
+			</div>
+			<p class="text-[white] px-[20px] text-[30px] mt-[25px] text-start">الخدمة كانت أكثر من رائعة! التعامل راقٍ والتجاوب سريع، والتجربة ككل فاقت توقعاتي. أنصح بها بكل ثقة</p>
+		</swiper-slide>
+
+		<swiper-slide class="w-[540px]  justify-start rounded-[15px] flex flex-col h-[350px] slide">
+			<div class=" flex items-center mt-[30px] justify-between w-full ">
+				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
+					<img src="./images/person.png" class="w-[66px] h-[66px]" alt="">
+					<p class="text-[39px] font-[700] text-[white]">ليلى محمد</p>
+				</div>
+				<div>
+					<svg width="145" class="ml-[20px]" height="29" viewbox="0 0 145 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M72.5 0L75.7129 9.8885H86.1103L77.6987 15.9999L80.9116 25.8884L72.5 19.777L64.0883 25.8884L67.3013 15.9999L58.8896 9.8885H69.287L72.5 0Z" fill="#FDCD53"/>
+						<path d="M101.595 0L104.808 9.8885H115.205L106.793 15.9999L110.006 25.8884L101.595 19.777L93.1829 25.8884L96.3959 15.9999L87.9842 9.8885H98.3816L101.595 0Z" fill="#FDCD53"/>
+						<path d="M130.689 0L133.902 9.8885H144.3L135.888 15.9999L139.101 25.8884L130.689 19.777L122.278 25.8884L125.491 15.9999L117.079 9.8885H127.476L130.689 0Z" fill="#FDCD53"/>
+						<path d="M43.4053 0L46.6183 9.8885H57.0157L48.604 15.9999L51.817 25.8884L43.4053 19.777L34.9937 25.8884L38.2066 15.9999L29.795 9.8885H40.1924L43.4053 0Z" fill="#FDCD53"/>
+						<path d="M14.3108 0L17.5237 9.8885H27.9211L19.5095 15.9999L22.7224 25.8884L14.3108 19.777L5.89911 25.8884L9.11208 15.9999L0.700418 9.8885H11.0978L14.3108 0Z" fill="#FDCD53"/>
+					</svg>
+
+				</div>
+			</div>
+			<p class="text-[white] px-[20px] text-[30px] mt-[25px] text-start">الخدمة كانت أكثر من رائعة! التعامل راقٍ والتجاوب سريع، والتجربة ككل فاقت توقعاتي. أنصح بها بكل ثقة</p>
+		</swiper-slide>
+
+
+		<svg width="361" class="absolute bottom-[-57%] right-[98%]" height="361" viewbox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.92" filter="url(#filter0_f_1_318)">
+				<circle cx="180.5" cy="180.5" r="80.5" fill="url(#paint0_radial_1_318)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_318" x="0" y="0" width="361" height="361" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_318"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_318" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(180.5 180.5) rotate(90) scale(80.5)">
+					<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+
+		<svg width="596" class="absolute bottom-[-86%] left-[-95%]" height="596" viewbox="0 0 596 596" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g filter="url(#filter0_f_1_63)">
 				<circle cx="298" cy="298" r="198" fill="url(#paint0_radial_1_63)"/>
 			</g>
@@ -263,44 +418,77 @@
 	</swiper-container>
 
 	 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // ثبّت direction بناءً على breakpoints
-      const thumbs = new Swiper('.thumbs-slider', {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        watchSlidesProgress: true,
-        breakpoints: {
-          // من 0 إلى 991px: عمودي
-          0: {
-            direction: 'horizontal'
-          },
-          // من 992px فما فوق: أفقي
-          992: {
-            direction: 'vertical'
-          }
-        }
-      });
-
-      // السلايدر الرئيسي مربوط بالـ thumbs
-      new Swiper('.main-slider', {
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        thumbs: {
-          swiper: thumbs
-        }
-      });
-    });
-  </script>
-
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	 <script>
-					const sliderarr =[[
-					  {}
-					],[],[]]
-					      </script>
+										  document.addEventListener('DOMContentLoaded', () => {
+										    // 1️⃣ init your two swipers and keep references
+										    const thumbsSwiper = new Swiper('.thumbs-slider', {
+										      slidesPerView: 4,
+										      spaceBetween: 10,
+										      watchSlidesProgress: true,
+										      breakpoints: { 0:{direction:'horizontal'}, 992:{direction:'vertical'} }
+										    });
+										    const mainSwiper = new Swiper('.main-slider', {
+										      spaceBetween: 10,
+										      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+										      thumbs: { swiper: thumbsSwiper }
+										    });
+										
+										    // 2️⃣ your image arrays
+										    const sliderArr = [
+										      [ // shoose1
+										        { img: "{{ asset('images/shoose1.png') }}" },
+										        { img: "{{ asset('images/shoose1.png') }}" },
+										        { img: "{{ asset('images/shoose1.png') }}" },
+										        { img: "{{ asset('images/shoose1.png') }}" },
+										        { img: "{{ asset('images/shoose1.png') }}" },
+										        /* … */
+										      ],
+										      [ // blackshoose
+										        { img: "{{ asset('images/blackshoose.png') }}" },
+										        { img: "{{ asset('images/blackshoose.png') }}" },
+										        { img: "{{ asset('images/blackshoose.png') }}" },
+										        { img: "{{ asset('images/blackshoose.png') }}" },
+										        { img: "{{ asset('images/blackshoose.png') }}" },
+										        { img: "{{ asset('images/blackshoose.png') }}" },
+										        { img: "{{ asset('images/blackshoose.png') }}" },
+										        /* … */
+										      ],
+										      [ // whiteshoose
+										        { img: "{{ asset('images/whiteshoose.png') }}" },
+										        /* … */
+										      ]
+										    ];
+										
+										    // 3️⃣ helper to rebuild slides
+										    function updateSlides(colorIndex) {
+										      const slides = sliderArr[colorIndex];
+										      // clear both
+										      thumbsSwiper.removeAllSlides();
+										      mainSwiper.removeAllSlides();
+										      // append new
+										      slides.forEach(item => {
+										        thumbsSwiper.appendSlide(
+										          `<div class="swiper-slide !w-[110px] !h-[92px]"><img src="${item.img}" /></div>`
+										        );
+										        mainSwiper.appendSlide(
+										          `<div class="swiper-slide !w-full !h-[544px] rounded-[25px]"><img src="${item.img}" /></div>`
+										        );
+										      });
+										      // tell Swiper to re-calc
+										      thumbsSwiper.update();
+										      mainSwiper.update();
+										    }
+										
+										    // 4️⃣ wire up your swatches
+										    document.getElementById('shoose1')     .addEventListener('click', ()=> updateSlides(0));
+										    document.getElementById('blackshoose') .addEventListener('click', ()=> updateSlides(1));
+										    document.getElementById('whiteshoose') .addEventListener('click', ()=> updateSlides(2));
+										
+										    // 5️⃣ optionally load the first color by default
+										    updateSlides(0);
+										  });
+										</script>
 
 
 {% endblock %}

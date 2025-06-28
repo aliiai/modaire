@@ -181,17 +181,17 @@
 	<!-- الاكثر مبيعا -->
 	<div class="w-full h-[60vh]  p-[30px] relative">
 
-		<div class="flex  items-center justify-between">
+		<div class="flex  items-center mb-[80px] md:mb-[30px] justify-between">
 			<p class="font-[700] text-[44px] text-[white]">الاكثر مبيعا</p>
 			<p class="font-[400] text-[24px] text-[white]">عرض الكل</p>
 		</div>
-		<div>
+		<div class="relative">
 			<swiper-container pagination-clickable="true" breakpoints='{
-												    "1": { "slidesPerView": 1, "spaceBetween": 10 },
-												    "685": { "slidesPerView": 2, "spaceBetween": 20 },
-												    "1000": { "slidesPerView": 3, "spaceBetween": 30 },
-												    "1424": { "slidesPerView": 4, "spaceBetween": 50 }
-												  }' loop="true" class="mySwiper" slides-per-view="4" space-between="50">
+																																    "1": { "slidesPerView": 1, "spaceBetween": 10 },
+																																    "685": { "slidesPerView": 2, "spaceBetween": 20 },
+																																    "1000": { "slidesPerView": 3, "spaceBetween": 30 },
+																																    "1424": { "slidesPerView": 4, "spaceBetween": 50 }
+																																  }' loop="true" class="mySwiper" slides-per-view="4" space-between="50">
 				<swiper-slide class="h-[438px] rounded-[30px] relative ">
 					<img class="w-full h-full rounded-[30px]" src="./images/store1.png" alt="">
 					<div class=" absolute bottom-[45px] w-full flex items-center justify-center">
@@ -276,6 +276,55 @@
 			</swiper-slide>
 
 		</swiper-container>
+		<svg width="853" class="bottom-[-84%]  left-[-20%] absolute z-[-1]" height="853" viewbox="0 0 853 853" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g filter="url(#filter0_f_1_5)">
+				<circle cx="426.5" cy="426.5" r="326.5" fill="url(#paint0_radial_1_5)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_5" x="0" y="0" width="853" height="853" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_5"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_5" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(426.5 426.5) rotate(90) scale(326.5)">
+					<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="805" class="bottom-[-160%]  right-[-13%] absolute z-[-1]" height="805" viewbox="0 0 805 805" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.4" filter="url(#filter0_f_1_14)">
+				<circle cx="402.5" cy="402.5" r="302.5" fill="url(#paint0_radial_1_14)" fill-opacity="0.8"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_14" x="0" y="0" width="805" height="805" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_14"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_14" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(402.5 402.5) rotate(90) scale(302.5)">
+					<stop stop-color="#FDCD53" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+		<svg width="403" class="bottom-[-40%]  right-[15%] absolute z-[-1]" height="403" viewbox="0 0 403 403" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.92" filter="url(#filter0_f_1_9)">
+				<circle cx="201.5" cy="201.5" r="101.5" fill="url(#paint0_radial_1_9)"/>
+			</g>
+			<defs>
+				<filter id="filter0_f_1_9" x="0" y="0" width="403" height="403" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_9"/>
+				</filter>
+				<radialGradient id="paint0_radial_1_9" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(201.5 201.5) rotate(90) scale(101.5)">
+					<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+				</radialGradient>
+			</defs>
+		</svg>
+
 	</div>
 </div>
 <!-- العروض -->
@@ -431,11 +480,11 @@
 <div>
 
 	<swiper-container class="mySwiper mt-[30px] relative " slides-per-view="2" centered-slides="true" loop="true" space-between="-30" effect="coverflow" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="150" coverflow-effect-modifier="1" coverflow-effect-slideshadows="false" breakpoints='{
-									    "320":  { "slidesPerView": 1, "spaceBetween": 10,  "centeredSlides": false },
-									    "640":  { "slidesPerView": 1, "spaceBetween": 20 },
-									    "768":  { "slidesPerView": 2, "spaceBetween": 0  },
-									    "1024": { "slidesPerView": 2, "spaceBetween": -30 }
-									  }'>
+																								    "320":  { "slidesPerView": 1, "spaceBetween": 10,  "centeredSlides": false },
+																								    "640":  { "slidesPerView": 1, "spaceBetween": 20 },
+																								    "768":  { "slidesPerView": 2, "spaceBetween": 0  },
+																								    "1024": { "slidesPerView": 2, "spaceBetween": -30 }
+																								  }'>
 		<swiper-slide class="w-[540px] slider-client justify-start rounded-[15px] flex flex-col h-[350px] slide">
 			<div class=" flex items-center mt-[30px] justify-between w-full ">
 				<div class="flex gap-[10px] items-center justify-center mr-[20px]">
@@ -556,7 +605,7 @@
 <!-- الاسئلة الشائعة -->
 
 <!-- Accordions -->
-<div class="mt-[300px] flex items-center justify-center flex-col relative">
+<div class="mt-[300px] flex items-center justify-center flex-col relative mb-[50px]">
 	<p class="text-[48px] font-[700] text-[white] text-center ">الاسئلة الشائعة</p>
 	<!-- Accordion Item 1 -->
 	<div class="px-[50px] md:w-[80%] h-full flex Accordion items-center justify-center mt-[30px]">
@@ -651,55 +700,71 @@
 			</radialGradient>
 		</defs>
 	</svg>
-<svg width="376" class="absolute left-[120px] z-[-1] top-0" height="376" viewBox="0 0 376 376" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_1_191)">
-<path d="M276 188C276 236.601 236.601 276 188 276C139.399 276 100 236.601 100 188C100 139.399 139.399 100 188 100C236.601 100 276 139.399 276 188Z" fill="url(#paint0_radial_1_191)" fill-opacity="0.8"/>
-</g>
-<defs>
-<filter id="filter0_f_1_191" x="0" y="0" width="376" height="376" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1_191"/>
-</filter>
-<radialGradient id="paint0_radial_1_191" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(188.135 188.135) rotate(32.3742) scale(97.653)">
-<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
-<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
-</radialGradient>
-</defs>
-</svg>
-<svg width="376" class="absolute right-[20%] z-[-1px] top-[50%]" height="376" viewBox="0 0 376 376" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_1_190)">
-<path d="M276 188C276 236.601 236.601 276 188 276C139.399 276 100 236.601 100 188C100 139.399 139.399 100 188 100C236.601 100 276 139.399 276 188Z" fill="url(#paint0_radial_1_190)" fill-opacity="0.8"/>
-</g>
-<defs>
-<filter id="filter0_f_1_190" x="0" y="0" width="376" height="376" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1_190"/>
-</filter>
-<radialGradient id="paint0_radial_1_190" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(188.135 188.135) rotate(32.3742) scale(97.653)">
-<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
-<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
-</radialGradient>
-</defs>
-</svg>
+	<svg width="376" class="absolute left-[120px] z-[-1] top-0" height="376" viewbox="0 0 376 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g filter="url(#filter0_f_1_191)">
+			<path d="M276 188C276 236.601 236.601 276 188 276C139.399 276 100 236.601 100 188C100 139.399 139.399 100 188 100C236.601 100 276 139.399 276 188Z" fill="url(#paint0_radial_1_191)" fill-opacity="0.8"/>
+		</g>
+		<defs>
+			<filter id="filter0_f_1_191" x="0" y="0" width="376" height="376" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+				<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_191"/>
+			</filter>
+			<radialGradient id="paint0_radial_1_191" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(188.135 188.135) rotate(32.3742) scale(97.653)">
+				<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+				<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+			</radialGradient>
+		</defs>
+	</svg>
+	<svg width="376" class="absolute right-[20%] z-[-1px] top-[50%]" height="376" viewbox="0 0 376 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g filter="url(#filter0_f_1_190)">
+			<path d="M276 188C276 236.601 236.601 276 188 276C139.399 276 100 236.601 100 188C100 139.399 139.399 100 188 100C236.601 100 276 139.399 276 188Z" fill="url(#paint0_radial_1_190)" fill-opacity="0.8"/>
+		</g>
+		<defs>
+			<filter id="filter0_f_1_190" x="0" y="0" width="376" height="376" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+				<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_190"/>
+			</filter>
+			<radialGradient id="paint0_radial_1_190" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(188.135 188.135) rotate(32.3742) scale(97.653)">
+				<stop stop-color="#D9D9D9" stop-opacity="0.3"/>
+				<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+			</radialGradient>
+		</defs>
+	</svg>
 
-<svg width="420" class="absolute left-0 bottom-[-90%]" height="408" viewBox="0 0 420 408" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_1_65)">
-<ellipse cx="210" cy="204" rx="110" ry="104" fill="url(#paint0_radial_1_65)"/>
-</g>
-<defs>
-<filter id="filter0_f_1_65" x="0" y="0" width="420" height="408" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1_65"/>
-</filter>
-<radialGradient id="paint0_radial_1_65" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 204) rotate(90) scale(104 110)">
-<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
-<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
-</radialGradient>
-</defs>
-</svg>
+	<svg width="420" class="absolute left-0 bottom-[-90%]" height="408" viewbox="0 0 420 408" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g filter="url(#filter0_f_1_65)">
+			<ellipse cx="210" cy="204" rx="110" ry="104" fill="url(#paint0_radial_1_65)"/>
+		</g>
+		<defs>
+			<filter id="filter0_f_1_65" x="0" y="0" width="420" height="408" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+				<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_65"/>
+			</filter>
+			<radialGradient id="paint0_radial_1_65" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(210 204) rotate(90) scale(104 110)">
+				<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
+				<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+			</radialGradient>
+		</defs>
+	</svg>
+	<svg width="420" height="408" class="bottom-[-28%] absolute  left-[-9%]" viewbox="0 0 420 408" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g filter="url(#filter0_f_1_65)">
+			<ellipse cx="210" cy="204" rx="110" ry="104" fill="url(#paint0_radial_1_65)"/>
+		</g>
+		<defs>
+			<filter id="filter0_f_1_65" x="0" y="0" width="420" height="408" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+				<feGaussianBlur stddeviation="50" result="effect1_foregroundBlur_1_65"/>
+			</filter>
+			<radialGradient id="paint0_radial_1_65" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(210 204) rotate(90) scale(104 110)">
+				<stop stop-color="#1C4FAF" stop-opacity="0.3"/>
+				<stop offset="1" stop-color="#B2BDC6" stop-opacity="0"/>
+			</radialGradient>
+		</defs>
+	</svg>
 
 </div>
 
