@@ -432,3 +432,26 @@ box-shadow: 0px 7px 17px 0px #FCFCFC40 inset;
    align-items: center !important;
    justify-content: center !important;
 }
+/* انتقال ناعم */
+.nav-icon circle,
+.nav-icon path {
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+/* عشان ترجع الأيقونة للوضع الافتراضي */
+.nav-icon circle {
+  fill: #232120;    /* الخلفية الداكنة */
+}
+.nav-icon path {
+  fill: none;       /* للمسارات اللي فيها stroke بس */
+  stroke: #fff;     /* شكل الأيقونة أبيض */
+}
+
+/* على الـ hover: الخلفية تصبح بيضاء والشكل أسود */
+li:hover .nav-icon circle {
+  fill: #fff !important;
+}
+li:hover .nav-icon path {
+  fill: #000 !important;     /* لو في مسارات بداخلها fill */
+  stroke: #000 !important;   /* لو الأيقونة تستخدم stroke */
+}
