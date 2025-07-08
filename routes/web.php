@@ -6,9 +6,9 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('/about', function () {
+Route::get('/products', function () {
     return view('pages.about');
-})->name('about');
+})->name('products');
 
 Route::get('/single', function () {
     return view('pages.single');
