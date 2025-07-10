@@ -35,7 +35,7 @@ body {
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+justify-content: space-between;
     height: 64px;
 
     align-items: center;
@@ -143,8 +143,11 @@ body {
         transition: transform 0.5s ease-in-out;
         box-shadow: 5px 0px 10px 0px #aaa;
         overflow: scroll;
+        justify-content: start;
     }
-
+.col{
+  flex-direction: column;
+}
     .navbar .menu-items li {
         margin-bottom: 1.8rem;
         font-size: 1.1rem;
@@ -159,8 +162,7 @@ body {
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-        transform: translateX(0);
-        transform: translateY(-146px);
+      transform: translate(34px, -232px);
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -455,3 +457,4 @@ li:hover .nav-icon path {
   fill: #000 !important;     /* لو في مسارات بداخلها fill */
   stroke: #000 !important;   /* لو الأيقونة تستخدم stroke */
 }
+.center{align-content: center;}
