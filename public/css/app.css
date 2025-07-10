@@ -35,7 +35,7 @@ body {
 
 .navbar-container {
     display: flex;
-justify-content: space-between;
+justify-content: start;
     height: 64px;
 
     align-items: center;
@@ -43,6 +43,7 @@ justify-content: space-between;
 
 .menu-items {
     display: flex;
+    margin-right: 222px;
 }
 .logo {
     font-size: 2.3rem;
@@ -458,3 +459,40 @@ li:hover .nav-icon path {
   stroke: #000 !important;   /* لو الأيقونة تستخدم stroke */
 }
 .center{align-content: center;}
+/* put this after Swiper’s own CSS */
+.mySwiper {
+  /* sets the color of the active bullet */
+  --swiper-pagination-color: #fff;
+}
+.mySwiper {
+  --swiper-pagination-bottom: -40px;
+}
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: #fff !important;       /* إذا كان السهم يعتمد على color */
+  fill: #fff !important;        /* إذا كان السهم أيقونة SVG */
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+  color: white;
+  fill: white;
+}
+.nav-cart{
+  margin-right: 177px;
+}
+@media (max-width: 1500px) {
+.menu-items {
+    
+    margin-right: 100px;
+}
+.nav-cart{
+  margin-right: 0px !important;
+}
+
+}
+@media (max-width: 1200px) {
+.menu-items {
+    
+    margin-right: 0px;
+}
+
+}
