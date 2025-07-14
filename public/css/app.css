@@ -35,7 +35,7 @@ body {
 
 .navbar-container {
     display: flex;
-justify-content: start;
+justify-content: space-around;
     height: 64px;
 
     align-items: center;
@@ -43,7 +43,7 @@ justify-content: start;
 
 .menu-items {
     display: flex;
-    margin-right: 222px;
+    /* margin-right: 222px; */
 }
 .logo {
     font-size: 2.3rem;
@@ -163,7 +163,7 @@ justify-content: start;
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-      transform: translate(34px, -232px);
+      transform: translate(-1px, -36px);
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -209,7 +209,7 @@ swiper-slide img {
     object-fit: cover;
 }
 .decription-slider {
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
 
     box-shadow: 0px 6px 20px 0px #0000001a;
 }
@@ -219,7 +219,7 @@ swiper-slide img {
 }
 .inner-offer {
     border: 1px solid #ffffff9a;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
 
     box-shadow: 0px -12px 26px 0px #00000040 inset;
 
@@ -293,8 +293,21 @@ swiper-container::part(container) {
     .menu-items {
         transform: translateY(-146px);
     }
+    .logo-nav-header{
+      left: 43%;
+    }
+    .nav-cart{
+      gap: 10px !important;
+      scale: 0.7;
+      top: 14px !important;
+    }
 }
+@media (max-width: 600px) {
+.logo-nav-header{
+        width: 54vw !important;
 
+}
+}
 .big-card {
     backdrop-filter: blur(8.399999618530273px);
     border: 1px solid #dedede3d;
@@ -352,13 +365,26 @@ details[open] summary .arrow {
   
 }
 @media (max-width: 1000px) {
+  .navbar .menu-items{
+    position: relative;
+    z-index: 999;
+  }
 #mobile-toggle{
     display: flex !important;
   }
-  
+  .nav-cart{
+    position: absolute;
+    top: 36px;
+    transform: translate(-50%, -50%);
+    right: -112px;
 }
-
-
+.logo-nav-header{
+  position: absolute;
+  top: 34px;
+  transform: translate(-50%, -50%) !important;
+left: 45%;
+}
+}
 
 .gallery-container {
   display: flex;
@@ -476,14 +502,12 @@ li:hover .nav-icon path {
   color: white;
   fill: white;
 }
-.nav-cart{
-  margin-right: 177px;
-}
+
 @media (max-width: 1500px) {
-.menu-items {
+/* .menu-items {
     
     margin-right: 100px;
-}
+} */
 .nav-cart{
   margin-right: 0px !important;
 }
